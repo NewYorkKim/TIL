@@ -130,3 +130,21 @@ $ git config --global --list #설정 확인
 
   - `git push -u origin master` : 두 번째 커밋부터 저장소 이름, 브랜치 이름 생략 가능
 
+
+
+# 7. GitHub Pages
+
+##### 템플릿 사이트
+
+- [startbootstrap](https://startbootstrap.com/)
+- [html5up](https://html5up.net/)
+
+
+
+##### 웹사이트 배포
+
+- GitHub ➡ Settings ➡ Pages
+- 브랜치 선택 후 저장
+- **.nojekyll** 파일 생성
+- [About GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#static-site-generators)
+
