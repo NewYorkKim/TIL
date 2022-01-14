@@ -1,10 +1,10 @@
-# Github 특강
+# GitHub 특강
 
 > 2022/01/12 ~ 2022/01/14
 
 
 
-## 1. Why Git and Github?
+## 1. Why Git and GitHub?
 
 ##### (분산) 버전 관리 프로그램
 
@@ -113,7 +113,7 @@ $ git config --global --list #설정 확인
 
 
 
-# 6. Github
+# 6. GitHub
 
 ##### 로컬 저장소와 원격 저장소 연결
 
@@ -129,6 +129,15 @@ $ git config --global --list #설정 확인
   - `git push <저장소 이름> <브랜치 이름>`
 
   - `git push -u origin master` : 두 번째 커밋부터 저장소 이름, 브랜치 이름 생략 가능
+
+##### 원격 저장소 가져오기
+
+- git clone
+  - `git clone <원격 저장소 주소>`
+  - `git init`과 `git remote add` 이미 수행
+
+- git push
+  - `git pull <저장소 이름> <브랜치 이름>`
 
 
 
