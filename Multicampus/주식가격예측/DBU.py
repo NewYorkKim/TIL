@@ -9,7 +9,8 @@ from threading import Timer
 class DBupdater:
     def __init__(self):
         #MySQL 연결
-        self.conn = pymysql.connect(host='host', user='user', password='password', db='DB_name', charset='utf8')
+        self.conn = pymysql.connect(host='host', user='user', 
+                password='password', db='DB_name', charset='utf8')
 
         #company_info 테이블 생성 (회사명, 종목코드, 최근 업데이트 날짜)
         with self.conn.cursor() as cur:
@@ -40,9 +41,8 @@ class DBupdater:
 
         #변경 내용 저장
         self.conn.commit()
-
-        #update_company_info 함수 호출
-        self.update_company_info()
+        #빈 딕셔너리 생성 >> 종목코드, 회사명 저장
+        self.codes = dict()
 
     def __del__(self):
         #MySQL 연결 종료
@@ -63,6 +63,11 @@ class DBupdater:
         return krx
 
     def update_company_info(self): #MySQL에 회사 정보 업데이트
+        sql = "SELECT * FROM company_info"
+        df = pd.read_sql(sql, self.conn) #대용량 데이터에 부적합
+        for idx in range(len(df)):
+            self.codes[df['code'].values[idx]] = df['company'].values[idx] #딕셔너리에 저장
+        
         with self.conn.cursor() as cur:
             #company_info 테이블에서 최근 업데이트 날짜 검색
             sql = "SELECT MAX(last_update) FROM company_info"
@@ -85,9 +90,16 @@ class DBupdater:
                     sql = f"REPLACE INTO company_info VALUES ('{company}', '{code}', '{today}')"
                     cur.execute(sql)
 
+                    self.codes[code] = company #딕셔너리에 저장
+
+                    #logs
+                    tmnow = datetime.now().strftime('%Y-%m-%d %H:%M')
+                    print(f"[{tmnow}] #{idx+1:04d} REPLACE INTO company_info\
+                        VALUES ({code}, {company}, {today})")
+
                 self.conn.commit()
 
-    def read_price(self, code, pages_to_fetch): #네이버 금융에서 주식 정보 가져오기
+    def read_price(self, code, company, pages_to_fetch): #네이버 금융에서 주식 정보 가져오기
         try:
              #빈 데이터프레임 total 생성
             total = pd.DataFrame()
@@ -115,6 +127,10 @@ class DBupdater:
                 table = pd.read_html(res.text)[0] 
                 # table = pd.read_html(str(soup_table))[0].dropna()
                 total = pd.concat([total, table])
+
+                #logs
+                tmnow = datetime.now().strftime('%Y-%m-%d %H:%M')
+                print(f'[{tmnow}] {company} ({code}) : {page:04d}/{pages:04d} pages are downloading...', end="\r")
         
             #칼럼 이름 변경
             total = total.rename(columns={'날짜':'Date', '종가':'Close', '전일비':'Diff', '시가':'Open', '고가':'High', '저가':'Low', '거래량':'Volume'})
@@ -134,29 +150,41 @@ class DBupdater:
         return total
 
     def update_daily_price(self, pages_to_fetch):
-        #company_info 테이블에서 회사명과 종목코드 검색
-        cur = self.conn.cursor()
-        cur.execute("SELECT company, code FROM company_info")
-        #codes에 모두 저장
-        codes = cur.fetchall()
+        # #company_info 테이블에서 회사명과 종목코드 검색
+        # cur = self.conn.cursor()
+        # cur.execute("SELECT company, code FROM company_info")
+        # #codes에 모두 저장
+        # codes = cur.fetchall()
 
-        #네이버 금융에서 해당기업 주식 정보 조회 후 replace_daily_price 함수 호출
-        for idx, code in enumerate(codes):
-            df = self.read_price(code[1], pages_to_fetch)
+        # #네이버 금융에서 해당기업 주식 정보 조회 후 replace_daily_price 함수 호출
+        # for idx, code in enumerate(codes):
+        #     df = self.read_price(code[1], pages_to_fetch)
             
+        #     if df is None:
+        #         continue
+
+        #     self.replace_daily_price(df, idx, code[1], code[0])
+
+        for idx, code in enumerate(self.codes):
+            df = self.read_price(code, self.codes[code], pages_to_fetch)
+
             if df is None:
                 continue
 
-            self.replace_daily_price(df, idx, code[1], code[0])
+            self.replace_daily_price(df, idx, code, self.codes[code])
 
-    def replace_daily_price(self, df, idx, code, company):
+    def replace_daily_price(self, df, num, code, company):
         #종목코드와 주식 정보를 REPLACE
         with self.conn.cursor() as cur:
             for row in df.itertuples():
-                sql = f"REPLACE INTO daily_price VALUES ('{code}', \
+                sql = f"REPLACE INTO daily_price VALUES ('{code}',\
                     '{row.Date}', {row.Open}, {row.Close}, {row.High}, {row.Low}, {row.Diff}, {row.Volume})"
                 cur.execute(sql)
         self.conn.commit()
+
+        #logs
+        print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] #{num+1} {company} ({code}) :\
+        {len(df)} row >>> REPLACE [COMPLETED]")
 
     def execute_daily(self): #매일 오후 17시에 daily_prcie 테이블 업데이트
         #update_company_info 함수 호출 
@@ -185,16 +213,16 @@ class DBupdater:
         if tmnow.month == 12 and tmnow.day == lastday: 
             tmnext = tmnow.replace(year=tmnow.year+1, month=1, day=1, hour=17, minute=0, second=0)
         elif tmnow.day == lastday: 
-            tmnext = tmnow.replace(montho=tmnow.month+1, day=1, hour=17, minute=0, second=0)
+            tmnext = tmnow.replace(month=tmnow.month+1, day=1, hour=17, minute=0, second=0)
         else:
-            tmnext = tmnow.replace(month=tmnow.day+1, hour=17, minute=0, second=0)
+            tmnext = tmnow.replace(day=tmnow.day+1, hour=17, minute=0, second=0)
         
         #tmnext와 tmnow의 시간차를 tmdiff에 저장
         tmdiff = tmnext - tmnow
         #tmdiff를 초단위로 변환
         secs = tmdiff.seconds
         #secs만큼 타이머 설정 >> 매일 17시마다 daily_update 함수 실행
-        t = Timer(secs, self.daily_update)
+        t = Timer(secs, self.update_daily_price)
         #다음 업데이트 시간 공지
         print(f"\nWaiting for next update ({tmnext.strftime('%Y-%m-%d %H:%M')})\n")
         #타이머 시작
@@ -202,6 +230,4 @@ class DBupdater:
 
 if __name__ == '__main__':
     dbu = DBupdater()
-    # dbu.daily_update()
-
-
+    dbu.execute_daily()
