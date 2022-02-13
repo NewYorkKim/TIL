@@ -50,9 +50,7 @@ class DBupdater:
 
     def read_krx_code(self): #krx에서 상장법인목록 가져오기
         url = "http://kind.krx.co.kr/corpgeneral/corpList.do?method=download&searchType=13"
-        res = requests.get(url) #VSCode >> 한글 깨짐
-        krx = pd.read_html(res.text)[0]
-        #krx = pd.read_html(url, header=0)[0] #스파이더 >> 한글 안 깨짐
+        krx = pd.read_html(url, header=0)[0] 
 
         #회사명과 종목코드에 대한 데이터만 추출, 칼럼 이름 변경
         krx = krx[['회사명', '종목코드']]
@@ -106,12 +104,13 @@ class DBupdater:
 
             #네이버 금융에서 해당 기업 주식 정보 가져오기
             url = f"http://finance.naver.com/item/sise_day.nhn?code={code}"
+            #네이버 금융에서 윕크롤러의 스크래핑 차단 >> User Agent 지정 
             headers = {'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36'}
             res = requests.get(url, headers=headers)
             soup = BeautifulSoup(res.text, 'lxml')
 
             pgrr = soup.find("td", class_="pgRR")
-            if pgrr is None: #총 페이지 수가 1인 경우 pgRR 부재
+            if pgrr is None: #총 페이지 수가 1인 경우 pgRR 없음
                 last_page = 1
             else:
                 last_page = str(pgrr.a["href"]).split('=')[-1]
@@ -121,11 +120,8 @@ class DBupdater:
             #페이지 별 주식 정보를 total에 병합
             for page in range(1, pages + 1):
                 res = requests.get(f"{url}&page={page}", headers=headers)
-                # soup = BeautifulSoup(res.text, 'lxml')
-                # soup_table = soup.select('table')
 
                 table = pd.read_html(res.text)[0] 
-                # table = pd.read_html(str(soup_table))[0].dropna()
                 total = pd.concat([total, table])
 
                 #logs
@@ -150,20 +146,6 @@ class DBupdater:
         return total
 
     def update_daily_price(self, pages_to_fetch):
-        # #company_info 테이블에서 회사명과 종목코드 검색
-        # cur = self.conn.cursor()
-        # cur.execute("SELECT company, code FROM company_info")
-        # #codes에 모두 저장
-        # codes = cur.fetchall()
-
-        # #네이버 금융에서 해당기업 주식 정보 조회 후 replace_daily_price 함수 호출
-        # for idx, code in enumerate(codes):
-        #     df = self.read_price(code[1], pages_to_fetch)
-            
-        #     if df is None:
-        #         continue
-
-        #     self.replace_daily_price(df, idx, code[1], code[0])
 
         for idx, code in enumerate(self.codes):
             df = self.read_price(code, self.codes[code], pages_to_fetch)
