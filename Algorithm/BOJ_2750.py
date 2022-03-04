@@ -8,7 +8,7 @@
 
 n = int(input())
 
-nums = [int(input()) for i in range(n)]
+nums = sorted([int(input()) for i in range(n)])
 
-for num in sorted(nums):
+for num in nums:
     print(num)
