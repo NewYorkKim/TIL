@@ -31,3 +31,8 @@
   - [깃허브](https://github.com/NewYorkKim/stl_promise_Visualization)
   - [streamlit](https://share.streamlit.io/trailblazer-yoo/streamlit_promise/promise.py)
 
+
+
+##### AWS
+
+- Linux
