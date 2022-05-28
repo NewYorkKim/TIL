@@ -36,3 +36,7 @@
 ##### AWS
 
 - Linux
+  - [생활코딩] Linux
+- AWS Educate
+  - Introduction to the AWS Management Console
+  - Introduction to Cloud 101

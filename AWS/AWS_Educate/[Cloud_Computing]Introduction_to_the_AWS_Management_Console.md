@@ -1,4 +1,4 @@
-# [AWS Educate] Introduction to the AWS Management Console
+# Introduction to the AWS Management Console
 
 > 2022/05/27
 

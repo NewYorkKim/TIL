@@ -29,4 +29,15 @@
 | `rm -r <폴더 이름>` | 폴더 삭제                                                    | recursive               |
 | `<명령어> --help`   | 명령어 사용 방법 확인 (1)                                    |                         |
 | `man <명령어>`      | 명령어 사용 방법 확인 (2)<br />전용 페이지로 이동            | manual                  |
+| `sudo <명령어>`     | root 권한을 빌려 명령 실행                                   | super user do           |
+
+
+
+##### nano
+
+![image-20220528211409701]([생활코딩]Linux.assets/image-20220528211409701.png)
+
+![image-20220528211802578]([생활코딩]Linux.assets/image-20220528211802578.png)
+
+![image-20220528212731142]([생활코딩]Linux.assets/image-20220528212731142.png)
 
