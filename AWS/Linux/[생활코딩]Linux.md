@@ -39,5 +39,34 @@
 
 ![image-20220528211802578]([생활코딩]Linux.assets/image-20220528211802578.png)
 
-![image-20220528212731142]([생활코딩]Linux.assets/image-20220528212731142.png)
+![image-20220529190439159]([생활코딩]Linux.assets/image-20220529190439159.png)
 
+
+
+##### Package manager
+
+- `apt`
+  - `sudo apt-get update`: 최신 소프트웨어 목록 업데이트
+  - `sudo apt-get upgrade`: 설치된 소프트웨어를 최신 버전으로 업그레이드
+  - `sudo apt-cache search <프로그램 이름>`: 관련 프로그램 검색
+  - `sudo apt-get install <프로그램 이름>`: 프로그램 설치
+  - `sudo apt-get upgrade <프로그램 이름>`: 프로그램 업그레이드
+  - `sudo apt-get remove <프로그램 이름>`: 프로그램 삭제
+- `yum`: On Amazaon Linux use `yum` instead of `apt-get`
+  - `sudo yum update`
+  - `sudo yum upgrade`
+  - `sudo yum search <프로그램 이름>`
+  - `sudo yum install <프로그램 이름>`
+  - `sudo yum upgrade <프로그램 이름>`
+  - `sudo yum remove <프로그램 이름>`
+
+
+
+##### wget & git
+
+- `wget <옵션> <URL>`
+  - `wget <URL>`
+  - `wget -O <파일 이름> <URL>`
+- git
+  - `sudo yum install git`: git 설치
+  - `git clone <URL> <DIR>`: 해당 디렉토리에 Git 저장소 복제

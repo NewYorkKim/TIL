@@ -36,7 +36,7 @@
 ##### AWS
 
 - Linux
-  - [생활코딩] Linux
+  - [[생활코딩] Linux](https://github.com/NewYorkKim/TIL/blob/master/AWS/Linux/%5B%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9%5DLinux.md)
 - AWS Educate
-  - Introduction to the AWS Management Console
-  - Introduction to Cloud 101
+  - [Introduction to the AWS Management Console](https://github.com/NewYorkKim/TIL/blob/master/AWS/AWS_Educate/%5BCloud_Computing%5DIntroduction_to_the_AWS_Management_Console.md)
+  - [Introduction to Cloud 101](https://github.com/NewYorkKim/TIL/blob/master/AWS/AWS_Educate/%5BCloud_Computing%5DIntroduction_to_Cloud_101.md)
