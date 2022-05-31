@@ -108,7 +108,7 @@ Each type of deployment model and strategy has a shared responsibility between y
 
 
 
-##### AWS Global Infrastructure
+### AWS Global Infrastructure
 
 - Region
   - A physical location around the world where data centers are clustered together
@@ -140,7 +140,6 @@ Each type of deployment model and strategy has a shared responsibility between y
 
   - User access
   - Encryption
-
 - AWS manages the security __OF__ the cloud, specially the physical infrastructure that hosts your resources, which include:
 
   - Physical security of data centers
@@ -148,4 +147,63 @@ Each type of deployment model and strategy has a shared responsibility between y
   - Network infrastructure
   - Virtualization infrastructure
 
-  
+
+
+
+### AWS Well-Architected Framework
+
+- Operational Excellence
+  - The ability to run and monitor systems to deliver business value and continually improve supporting processes and procedures
+  - Performing operations as code, annotating documentation, anticipating failure, and frequently making small, reversible changes
+- Security
+  - The ability to protect information, systems, and assets while delivering business value through risk assessments and mitigation strategies
+  - Automate security best practices when possible
+  - Apply security at all layers
+  - Protect data in transit and at rest
+- Reliability
+  - The ability of a system to:
+    - Recover from infrastructure or service disruptions
+    - Dynamically acquire computing resources to meet demand
+    - Mitigate disruptions such as transient network issues or misconfigurations
+  - Testing recovery procedures, scaling horizontally to increase aggregate system availability, and automatically recovering from failure
+- Performance Efficiency
+  - The ability to use computing resources efficiently to meet system requirements and to maintain that efficiency as demand changes and technologies evolve
+  - Experimenting more often, using serverless architectures, and designing systems to be able to go global in minutes
+- Cost Optimization
+  - The ability to run systems to deliver business value at the lowest price point
+  - Adopting a consumption model, analyzing and attributing expenditure, and using managed services to reduce the cost of ownership
+
+![image-20220531232222094]([Cloud_Computing]Introduction_to_Cloud_101.assets/image-20220531232222094.png)
+
+
+
+### Costs & Billing
+
+##### Total Cost of Ownership
+
+The __Total Cost of Ownership (TCO)__ is a financial metric that is used to estimate and compare direct and indirect costs of a product or a service. It typically includes the actual costs of:
+
+- Procurement
+- Management
+- Maintenance
+- Decommissioning of hardware resources
+
+![image-20220531232640109]([Cloud_Computing]Introduction_to_Cloud_101.assets/image-20220531232640109.png)
+
+![image-20220531232719935]([Cloud_Computing]Introduction_to_Cloud_101.assets/image-20220531232719935.png)
+
+
+
+##### AWS pricing models
+
+- Pay-as-you-go
+- Save when you reserve
+- Pay less by using more
+
+
+
+##### AWS Free Tier
+
+- Always free 
+- 12 months free
+- Trials
