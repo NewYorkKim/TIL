@@ -1,4 +1,4 @@
-# Linux 기초
+# \Linux 기초
 
 > 2022/05/27 ~ ing
 
@@ -70,3 +70,30 @@
 - git
   - `sudo yum install git`: git 설치
   - `git clone <URL> <DIR>`: 해당 디렉토리에 Git 저장소 복제
+
+
+
+##### Sequence execution 
+
+- semicolon `;`
+
+  ![image-20220601233621513]([생활코딩]Linux.assets/image-20220601233621513.png)
+
+
+
+##### pipeline
+
+- `grep`
+
+  - `grep <옵션 > <검색어> <파일 이름>`
+
+    ![image-20220601234903298]([생활코딩]Linux.assets/image-20220601234903298.png)
+
+- pipeline `|`
+
+  ![image-20220601235218328]([생활코딩]Linux.assets/image-20220601235218328.png)
+
+  
+
+  ![image-20220601235402621]([생활코딩]Linux.assets/image-20220601235402621.png)
+
