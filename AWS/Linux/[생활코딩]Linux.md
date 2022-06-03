@@ -97,3 +97,42 @@
 
   ![image-20220601235402621]([생활코딩]Linux.assets/image-20220601235402621.png)
 
+
+
+## 3. IO Redirection
+
+- Standard Output `>` or `1>`![image-20220603223111754]([생활코딩]Linux.assets/image-20220603223111754.png)
+
+- Standard Error `2>`![image-20220603223634702]([생활코딩]Linux.assets/image-20220603223634702.png)
+
+- ![image-20220603223909100]([생활코딩]Linux.assets/image-20220603223909100.png)
+- `/dev/null`	![image-20220603230008210]([생활코딩]Linux.assets/image-20220603230008210.png)
+
+
+
+##### input
+
+- `<`	![image-20220603224354270]([생활코딩]Linux.assets/image-20220603224354270.png)
+
+- `head <옵션> <파일이름>`
+
+  - Command-line Arguments
+
+    ![image-20220603224732223]([생활코딩]Linux.assets/image-20220603224732223.png)
+
+  - Standard Input ![image-20220603224845923]([생활코딩]Linux.assets/image-20220603224845923.png)
+
+  - Redirection
+
+    ![image-20220603225143301]([생활코딩]Linux.assets/image-20220603225143301-16542643495911.png)
+
+    - IO Stream
+
+
+
+##### append
+
+- `>>`
+
+  ![image-20220603225626031]([생활코딩]Linux.assets/image-20220603225626031.png)
+

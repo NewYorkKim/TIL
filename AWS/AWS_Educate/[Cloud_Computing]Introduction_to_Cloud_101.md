@@ -207,3 +207,141 @@ The __Total Cost of Ownership (TCO)__ is a financial metric that is used to esti
 - Always free 
 - 12 months free
 - Trials
+
+
+
+## AWS Core Services
+
+##### Monolithic architecture
+
+![image-20220603230535152]([Cloud_Computing]Introduction_to_Cloud_101.assets/image-20220603230535152.png)
+
+
+
+##### Microservices architecture
+
+- How to design for thigh application integrity
+
+![image-20220603230641210]([Cloud_Computing]Introduction_to_Cloud_101.assets/image-20220603230641210.png)
+
+
+
+##### Types of services
+
+- Managed services
+  - Require you to manage infrastructure management tasks like patching, backup, and repair
+  - Grant you virtual access to the underlying operation system and servers
+  - Scaling and building for high availability
+- Fully managed services
+  - Automate infrastructure management tasks that AWS handles, like patching, backup, and repair
+  - Not grant you any virtual access to the underlying operating system or servers
+  - Scaling and building for high availability
+- Serverless services
+  - Services, practices, and strategies that you can use to build more agile applications
+  - You can innovate and respond to change gaster
+  - AWS handles infrastructure management tasks like capacity provisioning and patching so that you can focus on building applications that serve your customers
+  - Automatic scaling, built-in high availability, and a pay-for-value billing model
+
+
+
+##### AWS Identity and Access Management (IAM)
+
+- A centralized security management system that is included in every AWS account to control identity access to AWS services
+  - User: an entity that you create in AWS
+  - Group: A collection of IAM users
+  - Role: An identity with permission policies that are attached to it
+- Solves the problem of users having more access than they should
+
+- Benefits
+  - Has a simple user interface that makes it easy to grant and control user access to AWS services
+  - Has many system-generated policies that you can use, and you can create additional custom policies that meet the needs of your specific requirements
+- Using IAM roles, you can grant someone from a different AWS account access to tour account to perform a specific task
+- How-to
+  - Fine-grained access control
+  - Multi-factor authentication
+  - Analyze access
+  - Integrate with your corporate directory
+- Note
+  - Implicit deny
+  - Explicit allow
+  - Explicit deny
+
+
+
+##### DynamoDB
+
+- A serverless non-relational database that can store and retrieve any amount of data and serve any level of request traffic
+
+- Benefits
+
+  - Supports some of the world's largest scale applications by providing consistent, single-digit millisecond response times at any scale
+  - Serverless with no servers to provision, patch, or manage and no software to install, maintain, or operate
+  - Supports ACID transactions so that you can build business-critical applications at scale
+
+- How-to
+
+  - Retail
+  - Gaming
+  - Banking
+  - Ad Tech
+
+- Note
+
+  - __Relational database__
+
+    - Store data in rows and columns
+    - A relational database schema is fixed
+    - Data in relational databases is queried by using structured query language (SQL), which can have complex queries
+    - Scale vertically by increasing hardware power
+    - Commonly used for traditional applications, enterprise resource planning (ERP), customer relationship management (CRM), and e-commerce
+
+  - __Non-relational database__
+
+    - Store data by using one of many storage models, including key-value pairs, documents, and graphs
+
+    - Non-relational schemas are dynamic, and information can be added rapidly
+
+    - Data in non-relational databases is queried by focusing on collections of documents
+
+    - Scale horizontally by increasing servers
+
+    - Key-value databases are commonly used for internet-scale applications, real-time bidding, shopping cars, and customer preferences
+
+      
+
+##### Amazon Virtual Private Cloud - VPC
+
+- A service that you use to launch AWS resources in a logically isolated virtual network that you define
+- Provides features that you can use to increase and monitor the security for your virtual private cloud (VPC) on demand
+- Benefits
+  - Provides advanced security features that you can use to perform inbound and outbound filtering at the instance and subnet levels
+  - With simple setup of Amazon VPC, you spend less time setting up, managing, and validating
+  - Helps you control your virtual networking environment
+
+- How-to
+  - Host a simple website
+  - Host multi-tier web applications
+  - Back up and recover
+  - Extend your corporate network
+
+
+
+##### Amazon Elastic Compute Cloud - EC2
+
+- A web service that provides secure, resizable compute capacity in the cloud
+- Solves the problem of predicting upfront needs
+- Benefits
+  - You can provision an EC2 instance in as little as 5 minutes: CPU, storage, and operating system for your specific needs
+  - With Amazon EC2, you can change the volume size and the instance type without terminating the instance
+  - You can use Amazon EC2 to scale up and down to meet seasonal needs
+
+- How-to
+  - Host multi-tier applications
+  - Backup and disaster recovery
+  - On-demand computing
+  - Host databases
+
+
+
+
+
