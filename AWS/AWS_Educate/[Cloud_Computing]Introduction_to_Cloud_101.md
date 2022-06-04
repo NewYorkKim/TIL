@@ -256,7 +256,7 @@ The __Total Cost of Ownership (TCO)__ is a financial metric that is used to esti
   - Has a simple user interface that makes it easy to grant and control user access to AWS services
   - Has many system-generated policies that you can use, and you can create additional custom policies that meet the needs of your specific requirements
 - Using IAM roles, you can grant someone from a different AWS account access to tour account to perform a specific task
-- How-to
+- How can I use
   - Fine-grained access control
   - Multi-factor authentication
   - Analyze access
@@ -278,7 +278,7 @@ The __Total Cost of Ownership (TCO)__ is a financial metric that is used to esti
   - Serverless with no servers to provision, patch, or manage and no software to install, maintain, or operate
   - Supports ACID transactions so that you can build business-critical applications at scale
 
-- How-to
+- How can I use
 
   - Retail
   - Gaming
@@ -318,7 +318,7 @@ The __Total Cost of Ownership (TCO)__ is a financial metric that is used to esti
   - With simple setup of Amazon VPC, you spend less time setting up, managing, and validating
   - Helps you control your virtual networking environment
 
-- How-to
+- How can I use
   - Host a simple website
   - Host multi-tier web applications
   - Back up and recover
@@ -335,7 +335,7 @@ The __Total Cost of Ownership (TCO)__ is a financial metric that is used to esti
   - With Amazon EC2, you can change the volume size and the instance type without terminating the instance
   - You can use Amazon EC2 to scale up and down to meet seasonal needs
 
-- How-to
+- How can I use
   - Host multi-tier applications
   - Backup and disaster recovery
   - On-demand computing
@@ -343,5 +343,109 @@ The __Total Cost of Ownership (TCO)__ is a financial metric that is used to esti
 
 
 
+##### AWS Lambda
+
+- A serverless compute service that you can use to run function code without provisioning or managing servers
+- Removes all administration for application or backend services that can be processed in snippets of code
+- Benefits
+
+  - You can have no servers to manage
+  - Has built in continuous scaling that scales your application by running code in response to each event
+- How can I use
+
+  - Web applications
+  - Data processing
+  - Real-time file processing
+  - Real-time stream processing
 
 
+
+##### Amazon Simple Notification Service - SNS
+
+- A web service that makes it easy to set up, operate, and send notification from the cloud
+- Solves the problem of the appropriate subscribers not getting important information that they should be aware of, as events occur in their applications or infrastructure
+- Benefits
+  - You can use Amazon SNS to send messages or notifications directly to users across 200 countries
+  - Uses a number of strategies that work together to provide message durability
+- How can I use
+  - Standard
+    - Standard topics can be used in many scenarios if your application can process messages that arrive more than once and out of order
+    - Media encoding, fraud detection, tax calculation, search index, and critical alerting systems
+  - FIFO
+    - FIFO topics are designed to enhance messaging between applications when the order of operations and events is critical, or where duplicates can't be tolerated
+    - bank transaction logging, stock monitoring, flight tracking, inventory management, and price update systems
+- cannot automate messages by itself
+
+
+
+##### Amazon CloudWatch
+
+- A monitoring and observation service that is built for DevOps engineers, developers, security engineers, and IT managers 
+- Solves the problem of responding to events and alarms, as they occur in your architecture
+- Benefits
+  - You can use CloudWatch to collect metrics and logs from all your AWS resources, applications, and services that run on AWS and on-premises servers
+  - You can use CloudWatch to maintain visibility across your services, applications, and infrastructure, so you can visualize key metrics like CPU utilization and memory
+  - You can use CloudWatch to set alarms and take automated actions
+- How can I use
+  - Infrastructure monitoring and troubleshooting
+  - Proactive resource optimization
+  - Application monitoring
+
+
+
+##### Amazon Relational Database Service (Amazon RDS)
+
+- A distributed relational database managed service
+- Solves the problem of purchasing a database with a capacity that is either too large or too small for your use over time
+- Benefits
+  - Is easy to administer with no need for infrastructure provisioning, and no need for installing and maintaining database software
+  - Is fast and supports the most demanding database applications
+
+- How can I use
+  - Web and mobile applications
+  - Ecommerce applications
+  - Mobile and online games
+- Fully managed
+
+
+
+##### Amazon Simple Storage Service - S3
+
+- Object storage that is built to store and retrieve any amount of data from anywhere at any time
+- You don't need to estimate how much storage space you will need
+- Files that are uploaded to Amazon S3 are automatically replicated across multiple Availability Zones in the Region
+- Benefits
+  - Offers you industry-leading performance, scalability, availability, and durability that you can use to easily build applications that use cloud native storage
+  - Is highly scalable
+  - Has unmatched security, compliance, and audit capabilities in the cloud
+- How can I use
+  - Backup and restore
+  - Disaster recovery
+  - Archive
+  - Data lakes and big data analytics
+- Note
+  - Is designed for object storage, not block storage
+  - __Object storage__
+    - A storage option that is meant for read-intensive files that are not written to
+    - If the file needs a change, then the file can be overwritten
+    - Pictures, videos, documents, and static websites
+  - __Block storage__
+    - A more structured set of data hosting that is often written to
+    - Pictures, videos, documents, and static websites
+    - Amazon Elastic Block Store
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 	
