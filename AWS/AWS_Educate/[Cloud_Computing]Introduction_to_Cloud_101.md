@@ -436,6 +436,24 @@ The __Total Cost of Ownership (TCO)__ is a financial metric that is used to esti
 
 
 
+## Lab 1 - Introduction to Amazon S3
+
+`60 minutes` `Total score 15/15`
+
+##### Task 1: Creating a bucket
+
+##### Task 2: Uploading an object to the bucket
+
+##### Task 3: Making an object public
+
+##### Task 4: Testing connectivity from the EC2 instance
+
+##### Task 5: Creating a bucket policy
+
+##### Task 6: Exploring versioning
+
+
+
 
 
 
