@@ -101,10 +101,14 @@
 
 ## 3. IO Redirection
 
+![image-20220606151114921]([생활코딩]Linux.assets/image-20220606151114921.png)
+
+[Image Source](https://slideplayer.com/slide/5117573/)
+
+
+
 - Standard Output `>` or `1>`![image-20220603223111754]([생활코딩]Linux.assets/image-20220603223111754.png)
-
 - Standard Error `2>`![image-20220603223634702]([생활코딩]Linux.assets/image-20220603223634702.png)
-
 - ![image-20220603223909100]([생활코딩]Linux.assets/image-20220603223909100.png)
 - `/dev/null`	![image-20220603230008210]([생활코딩]Linux.assets/image-20220603230008210.png)
 
@@ -158,5 +162,7 @@
 
 
 
+## Directory structure
 
+![Linux File System Structure](https://static.thegeekstuff.com/wp-content/uploads/2010/11/filesystem-structure.png)
 

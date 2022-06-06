@@ -438,7 +438,7 @@ The __Total Cost of Ownership (TCO)__ is a financial metric that is used to esti
 
 ## Lab 1 - Introduction to Amazon S3
 
-`60 minutes` `Total score 15/15`
+`60 minutes` `Total score: 15/15`
 
 ##### Task 1: Creating a bucket
 
@@ -454,7 +454,34 @@ The __Total Cost of Ownership (TCO)__ is a financial metric that is used to esti
 
 
 
+## Lab 2 - Introduction to Amazon EC2
 
+`45 minutes` `Total score: 20/20`
+
+##### Task 1: Launching your EC2 instance
+
+1. Name your EC2 instance
+2. Choose an Amazon Machine Image (AMI)
+3. Choose an instance type
+4. Configure a key pair
+5. Configure the network settings
+6. Add storage
+7. Configure advanced details
+8. Launch an EC2 instance
+
+##### Task 2: Monitoring your instance
+
+##### Task 3: Updating your security group and accessing the web server
+
+##### Task 4: Resizing your instance - instance type and EBS volume
+
+1. Stop your instance
+2. Change the instance type
+3. Resize the EBS volume
+
+##### Task 5: Exploring EC2 limits
+
+##### Test 6: Testing termination protection
 
 
 
