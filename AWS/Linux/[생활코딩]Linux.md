@@ -166,3 +166,22 @@
 
 ![Linux File System Structure](https://static.thegeekstuff.com/wp-content/uploads/2010/11/filesystem-structure.png)
 
+
+
+## Process
+
+`ps`
+
+- 프로세스 조회
+- `ps aux`
+- PID: 프로세스 ID ➡ `sudo kill <PID>`
+- `top`, `htop`: 프로세스 관찰/열람
+
+
+
+
+
+
+
+
+

@@ -485,6 +485,34 @@ The __Total Cost of Ownership (TCO)__ is a financial metric that is used to esti
 
 
 
+## Lab 3 - Introduction to Amazon DynamoDB
+
+`30 minutes` `Total score: 5/5`
+
+##### Task 1: Creating a New Table
+
+##### Task 2: Adding Data
+
+##### Task 3: Modifying an Existing Item
+
+##### Task 4: Querying the Table
+
+##### Task 5: Deleting an Item
+
+
+
+## Lab 4 - Introduction to Amazon Relational Database Service (Amazon RDS)
+
+`30 minutes` `Total score: 20/20`
+
+##### Task 1: Creating an Amazon RDS database
+
+##### Task 2: Configuring web application communication with a database instance
+
+
+
+
+
 
 
 
