@@ -511,6 +511,29 @@ The __Total Cost of Ownership (TCO)__ is a financial metric that is used to esti
 
 
 
+## Lab 5 - Introduction to Amazon Virtual Private Cloud (Amazon VPC)
+
+`45 minutes` `Total score: 45/45`
+
+##### Task 1: Creating a VPC
+
+##### Task 2: Creating subnets
+
+- Create a public subnet
+- Create a private subnet
+
+##### Task 3: Creating an internet gateway
+
+##### Task 4: Configuring route tables
+
+##### Task 5: Creating a security group for the application server
+
+##### Task 6: Launching an application server in the public subnet
+
+
+
+
+
 
 
 

@@ -179,9 +179,40 @@
 
 
 
+## File find
+
+`locate <파일 이름>`
+
+- 데이터베이스: mlocate
+  - `sudo updatedb`
 
 
 
+`find`
+
+- 디렉토리
+
+  - `find /`: root 디렉토리
+
+  - `find .`: 현재 디렉토리
+
+  - `find ~`: 홈 디렉토리
+
+- Permission denied ➡ `sudo find`
+- `-type`: 데이터 타입으로 검색
+- `-name`: 데이터 이름으로 검색
 
 
+
+`whereis`
+
+- `$PATH`: 환경변수
+
+
+
+## background execute
+
+- `jobs`: 백그라운드 작업 목록 출력
+- `fg`: 백그라운드에서 실행되고 있는 작업 ➡ 포어그라운드로 
+- `<명령어> &`: 명령어 백그라운드에서 실행
 
