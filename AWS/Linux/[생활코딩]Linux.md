@@ -1,4 +1,4 @@
-# \Linux 기초
+# Linux 기초
 
 > 2022/05/27 ~ ing
 
@@ -8,7 +8,7 @@
 
 - [생활코딩-블로그](https://opentutorials.org/module/2538/14160)
 - [생활코딩-강의](https://youtu.be/DsG-JWrFJTc)
-- `AWS Cloud9` 이용
+- `AWS Cloud9` 
 
 
 
@@ -210,9 +210,26 @@
 
 
 
-## background execute
+## Background Execute
 
 - `jobs`: 백그라운드 작업 목록 출력
 - `fg`: 백그라운드에서 실행되고 있는 작업 ➡ 포어그라운드로 
 - `<명령어> &`: 명령어 백그라운드에서 실행
 
+
+
+## Daemon
+
+1. `sudo yum install apache2`
+2. `cd /etc/init.d/`: daemon 프로그램들이 위치하는 곳으로 이동
+3. `sudo service apache2 start`: apache2의 명령어 중 start 실행
+4. `ps aux | grep apahce2`: 현재 실행되는 프로세스 중 apache2을 포함하고 있는 경우만 화면에 출력
+
+5. `sudo service apache2 stop`: apache2 실행 종료
+
+
+
+![image-20220614170756544]([생활코딩]Linux.assets/image-20220614170756544.png)
+
+- `rc3.d/`: 콘솔 방식으로 리눅스 구동할 경우 
+- `rc5.d/`: GUI 방식으로 리눅스 구동할 경우

@@ -532,6 +532,50 @@ The __Total Cost of Ownership (TCO)__ is a financial metric that is used to esti
 
 
 
+## Lab 6 - Introduction to AWS Identity and Access Management (IAM)
+
+`40 minutes` `Total score: 15/15`
+
+##### Task 1: Explore the users and groups
+
+- Note the Region you are in
+- Business scenario
+
+​	![image-20220614163200829]([Cloud_Computing]Introduction_to_Cloud_101.assets/image-20220614163200829.png)
+
+##### Task 2: Add users to groups
+
+- Add user-1 to the S3-Support group
+- Add user-2 to the EC2-support group
+- Add user-3 to the EC2-Admin group
+
+##### Task 3: Sign in and test users
+
+- Get the console sign-in URL
+- Test user-1 permissions
+- Test user-2 permissions
+- Test user-3 permissions
+
+
+
+## Lab 7 - Hosting a Static Website Using Amazon Simple Storage Service (Amazon S3)
+
+`30 minutes` `Total score: 20/20`
+
+##### Task 1: Creating a bucket in Amazon S3
+
+##### Task 2: Uploading content to your bucket
+
+##### Task 3: Enabling access to the objects
+
+##### Task 4: Uploading the website
+
+
+
+
+
+
+
 
 
 
