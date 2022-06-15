@@ -233,3 +233,25 @@
 
 - `rc3.d/`: 콘솔 방식으로 리눅스 구동할 경우 
 - `rc5.d/`: GUI 방식으로 리눅스 구동할 경우
+
+
+
+## Cron
+
+- 정기적으로 작업 실행
+
+- `crontab -e`
+
+  ![Claus Ibsen (@davsclaus) riding the Apache Camel: Apache Camel 2.12 - Even  easier cron scheduled routes](http://2.bp.blogspot.com/--d9V7XzD9aU/UgzRLNXIgSI/AAAAAAAAAcM/cIzUHV665v0/s1600/cron.png)
+
+  ​	![image-20220615134728209]([생활코딩]Linux.assets/image-20220615134728209.png)
+
+  ![image-20220615135138805]([생활코딩]Linux.assets/image-20220615135138805.png)
+
+  ![image-20220615140145864]([생활코딩]Linux.assets/image-20220615140145864.png)
+
+  ![image-20220615135923409]([생활코딩]Linux.assets/image-20220615135923409.png)
+
+  ![image-20220615140304451]([생활코딩]Linux.assets/image-20220615140304451.png)
+
+  

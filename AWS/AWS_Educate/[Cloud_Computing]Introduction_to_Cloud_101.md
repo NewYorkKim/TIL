@@ -1,6 +1,6 @@
 # Introduction to Cloud 101
 
-> 2022/05/28 ~ ing
+> 2022/05/28 ~ 2022/06/15
 
 - source: [AWS Educate](https://aws.amazon.com/education/awseducate/)
 
@@ -572,17 +572,81 @@ The __Total Cost of Ownership (TCO)__ is a financial metric that is used to esti
 
 
 
+## Cloud Careers
+
+##### Why choose a career in the cloud?
+
+- Hundreds of services
+- Global operations
+- Millions of customers
 
 
 
+##### Benefits of a career in the cloud
+
+![image-20220615130114271]([Cloud_Computing]Introduction_to_Cloud_101.assets/image-20220615130114271.png)
 
 
 
+##### Basic qualifications
+
+- Bachelor's degree or equivalent experience
+- Experience with systems administration, network administration, IT security, systems architecture or other technical discipline
+- Scripting in a cloud-based language such as Python, Java, or .Net
+- AWS Certifications
 
 
 
+##### Solutions architect career pathway example
+
+1. Basic IT training
+2. Coding proficiency
+3. Certifications
+4. Entry-level role
+5. Solution architect
 
 
+
+##### Cloud career variety
+
+- IT professionals
+  - Cloud support specialist
+  - Solution architect
+  - DevOps engineer
+  - Big data analyst
+  - Machine learning engineer
+  - Application developer
+- Sales
+  - Cloud consultant
+  - AWS account managers
+- Management
+  - People managers
+  - Program managers
+  - Finance managers
+- Education
+  - Enterprise trainers
+  - University instructors
+- Startups
+  - Small business
+  - Private contractors
+
+
+
+## Final Assessment
+
+`My score: 150/150`
+
+
+
+## Next Steps
+
+![image-20220615132914743]([Cloud_Computing]Introduction_to_Cloud_101.assets/image-20220615132914743.png)
+
+
+
+## My Badge
+
+![image-20220615165626867]([Cloud_Computing]Introduction_to_Cloud_101.assets/image-20220615165626867.png)
 
 
 

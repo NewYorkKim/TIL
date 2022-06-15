@@ -18,7 +18,8 @@
 
 ##### 알고리즘
 
-- [알고리즘](https://github.com/NewYorkKim/TIL/tree/master/Algorithm)
+- [정리](https://github.com/NewYorkKim/TIL/tree/master/Algorithm/Note)
+- [풀이](https://github.com/NewYorkKim/TIL/tree/master/Algorithm/Solve)
 
 
 

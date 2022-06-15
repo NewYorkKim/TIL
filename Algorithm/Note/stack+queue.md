@@ -1,8 +1,8 @@
 # 스택과 큐
 
-> 2022/06/24 ~ ing
+> 2022/06/24
 
-`datastructure` `algorithm` `python`
+`data structure` `algorithm` `python`
 
 
 
@@ -83,11 +83,11 @@ print(queue)  # 나중에 들어온 원소부터
 
 - [백준 10773번](https://www.acmicpc.net/problem/10773) `success`
 
-- [백준 9012번](https://www.acmicpc.net/problem/9012)
+- [백준 9012번](https://www.acmicpc.net/problem/9012) `success`
 
-- [백준 4949번](https://www.acmicpc.net/problem/4949)
+- [백준 4949번](https://www.acmicpc.net/problem/4949) `success`
 
-- [백준 1874번](https://www.acmicpc.net/problem/1874)
+- [백준 1874번](https://www.acmicpc.net/problem/1874) 
 
 - [백준 17298](https://www.acmicpc.net/problem/17298)
 
