@@ -99,16 +99,16 @@ for i in range(n):
 
 - [백준 11286번](https://www.acmicpc.net/problem/11286) `success`
 
-- [백준 1655번]()
+- [백준 1417번](https://www.acmicpc.net/problem/1417) `success`
 
-- [백준 1417번]()
-
-- [백준 14235번]()
+- [백준 14235번](https://www.acmicpc.net/problem/14235) `success`
 
 - [백준 15903번]()
 
 - [백준 2075번]()
 
-- [백준1715번]()
+- [백준 1715번]()
+
+- [백준 1655번](https://www.acmicpc.net/problem/1655)
 
   

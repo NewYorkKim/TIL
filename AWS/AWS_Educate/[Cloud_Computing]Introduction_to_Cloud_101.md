@@ -6,6 +6,12 @@
 
 
 
+## My Badge
+
+![image-20220615165626867]([Cloud_Computing]Introduction_to_Cloud_101.assets/image-20220615165626867.png)
+
+
+
 ## Introduction to Cloud 101
 
 ##### Why learn about the cloud?
@@ -644,9 +650,7 @@ The __Total Cost of Ownership (TCO)__ is a financial metric that is used to esti
 
 
 
-## My Badge
 
-![image-20220615165626867]([Cloud_Computing]Introduction_to_Cloud_101.assets/image-20220615165626867.png)
 
 
 
