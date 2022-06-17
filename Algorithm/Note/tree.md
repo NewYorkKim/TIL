@@ -56,29 +56,29 @@ class Node:
         self.left_node = left_node
         self.right_node = right_node
         
-    # 전위 순회
-    def pre_order(node):
-        print(node.data, end=' ')
-        if node.left_node != None:
-            pre_order(tree[node.left_node])
-        if node.right_node != None:
-            pre_order(tree[node.right_node])
+# 전위 순회
+def pre_order(node):
+	print(node.data, end=' ')
+    if node.left_node != None:
+    	pre_order(tree[node.left_node])
+    if node.right_node != None:
+        pre_order(tree[node.right_node])
             
-    # 중위 순회
-    def in_order(node):
-        if node.left_node != None:
-            in_order(tree[node.left_node])
-        print(node.data, end=' ')
-        if node.right_node != None:
-            in_order(tree[node.right_node])
+# 중위 순회
+def in_order(node):
+	if node.left_node != None:
+    	in_order(tree[node.left_node])
+    print(node.data, end=' ')
+    if node.right_node != None:
+        in_order(tree[node.right_node])
             
-    # 후위 순회
-    def post_order(node):
-        if node.left_node != None:
-            post_order(tree[node.left_node])
-        if node.right_node != None:
-            post_order(tree[node.right_node])
-        print(node.data, end=' ')
+# 후위 순회
+def post_order(node):
+	if node.left_node != None:
+    	post_order(tree[node.left_node])
+    if node.right_node != None:
+        post_order(tree[node.right_node])
+    print(node.data, end=' ')
         
 n = int(input())
 tree = {}
@@ -105,7 +105,7 @@ post_order(tree['A'])
 - [백준 11725번](https://www.acmicpc.net/problem/11725)
 - [백준 1167번]()
 - [백준 1967번]()
-- [백준 1991번]()
+- [백준 1991번](https://www.acmicpc.net/problem/1991) `success`
 - [백준 2263번]()
 - [백준 5639번]()
 - [백준 4803번]()

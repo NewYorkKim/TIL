@@ -41,10 +41,12 @@
 - AWS Educate
   - [Introduction to the AWS Management Console](https://github.com/NewYorkKim/TIL/blob/master/AWS/AWS_Educate/%5BCloud_Computing%5DIntroduction_to_the_AWS_Management_Console.md)
   - [Introduction to Cloud 101](https://github.com/NewYorkKim/TIL/blob/master/AWS/AWS_Educate/%5BCloud_Computing%5DIntroduction_to_Cloud_101.md) `badge`
+- Aws for Mobile
 
 
 
 ##### Firebase
 
 - Google Analytics 4
+  - [Discover the Next Generation of Google Analytics](https://github.com/NewYorkKim/TIL/blob/master/Firebase/Google_Analytics_4/Discover_the_Next_Generation_of_Google_Analytics.md)
 - Universal_Analytics
