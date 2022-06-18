@@ -41,7 +41,7 @@
 - AWS Educate
   - [Introduction to the AWS Management Console](https://github.com/NewYorkKim/TIL/blob/master/AWS/AWS_Educate/%5BCloud_Computing%5DIntroduction_to_the_AWS_Management_Console.md)
   - [Introduction to Cloud 101](https://github.com/NewYorkKim/TIL/blob/master/AWS/AWS_Educate/%5BCloud_Computing%5DIntroduction_to_Cloud_101.md) `badge`
-- Aws for Mobile
+- AWS for Mobile
 
 
 
