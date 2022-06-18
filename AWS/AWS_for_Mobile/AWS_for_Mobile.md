@@ -60,10 +60,11 @@ The **Amplify [Hosting](https://aws.amazon.com/amplify/hosting/)** is an AWS ser
 
   - 1-1) [CLI] NPM
 
-    ![NPM 설치](AWS_for_Mobile.assets/aws_cli_npm_install.png)
+    ![NPM 설치](AWS_for_Mobile.assets/aws_cli_npm_install.png "NPM 설치")
 
     ![image-20220617154951225](AWS_for_Mobile.assets/image-20220617154951225.png)
 
+<<<<<<< Updated upstream
   - 1-2) [CLI] Mac and Linux 
     ![Mac+Linux 설치](AWS_for_Mobile.assets/aws_cli_mac_install.png)
 
@@ -72,8 +73,15 @@ The **Amplify [Hosting](https://aws.amazon.com/amplify/hosting/)** is an AWS ser
 
   - [CLI] Amplify CLI 설치 
     ![AWS CLI](AWS_for_Mobile.assets/setup_aws_cli.png)
+=======
+  - 1-2) [CLI] Mac and Linux ![Mac+Linux 설치](AWS_for_Mobile.assets/aws_cli_mac_install.png "Mac+Linux 설치")
 
-    ![image-20220617220203759](AWS_for_Mobile.assets/image-20220617220203759.png)
+  - 1-3) [CLI] Windows ![윈도우 설치](AWS_for_Mobile.assets/aws_cli_windows_install.png "윈도우 설치")
+
+  - [CLI] Amplify CLI 설치 ![AWS CLI](AWS_for_Mobile.assets/setup_aws_cli.png "AWS CLI")
+>>>>>>> Stashed changes
+
+    ![image-20220617220203759](AWS_for_Mobile.assets/image-20220617220203759.png "image-20220617220203759")
 
   - [AWS] AWS  `Root user` 로그인
 
@@ -95,7 +103,7 @@ The **Amplify [Hosting](https://aws.amazon.com/amplify/hosting/)** is an AWS ser
 
   - 완료
 
-     ![image-20220617223326760](AWS_for_Mobile.assets/image-20220617223326760.png)
+     ![image-20220617223326760.png](AWS_for_Mobile.assets/image-20220617223326760.png)
 
     
 
@@ -108,8 +116,12 @@ The **Amplify [Hosting](https://aws.amazon.com/amplify/hosting/)** is an AWS ser
 
      ![image-20220618005551916](AWS_for_Mobile.assets/image-20220618005551916.png)
 
+<<<<<<< Updated upstream
    - React Native CLI 
      ![React Native CLI](AWS_for_Mobile.assets/react_native_cli.png)
+=======
+   - React Native CLI ![react_native_cli.png](AWS_for_Mobile.assets/react_native_cli.png)
+>>>>>>> Stashed changes
 
 2. Install Amplify libraries
 
@@ -119,7 +131,7 @@ The **Amplify [Hosting](https://aws.amazon.com/amplify/hosting/)** is an AWS ser
    - React Native CLI 
      ![React Native CLI-Amplify Libraries (1)](AWS_for_Mobile.assets/react_native_cli_amplify_libraries-1.png)
 
-     ![React Native CLI-Amplify Libraries (2)](AWS_for_Mobile.assets/react_native_cli_amplify_libraries-2.png)
+     ![React Native CLI-Amplify Libraries (2)](AWS_for_Mobile.assets/react_native_cli_amplify_libraries-2.png "React Native CLI-Amplify Libraries (2)")
 
    - __App.js__ (Expo) or __index.js__ (React Native CLI)에 아래의 코드 추가
    
@@ -137,6 +149,7 @@ The **Amplify [Hosting](https://aws.amazon.com/amplify/hosting/)** is an AWS ser
 
    - [Amplify Studio](https://sandbox.amplifyapp.com/getting-started)
 
+<<<<<<< Updated upstream
    -  `To-do list` ,  `React Native` 선택 ➡ `Get started` 선택 
      ![image-20220618142601911](AWS_for_Mobile.assets\image-20220618142601911.png)
 
@@ -144,10 +157,19 @@ The **Amplify [Hosting](https://aws.amazon.com/amplify/hosting/)** is an AWS ser
      ![add field (1)](AWS_for_Mobile.assets/add_filed-1.png) 
 
      ![add field (2)](AWS_for_Mobile.assets\add_filed-2.png)
+=======
+   -  `To-do list` ,  `React Native` 선택 ➡ `Get started` 선택 ![image-20220618142601911](AWS_for_Mobile.assets\image-20220618142601911.png)
+
+   - Add the isComplete Boolean field 
+      ![add field (1)](AWS_for_Mobile.assets/add_filed-1.png) 
+
+      ![add field (2)](AWS_for_Mobile.assets\add_filed-2.png)
+>>>>>>> Stashed changes
 
 2. Generate the models locally
    - Install Amplify CLI to pull the data model
      - Amplify CLI 이미 설치 완료 `Skip`
+<<<<<<< Updated upstream
      - 폴더로 이동 ➡ [CLI] 아래의 명령어 실행
        ![pull amplify](AWS_for_Mobile.assets\pull_amplify.png "pull amplify") 
        ![image-20220618183429325](AWS_for_Mobile.assets\image-20220618183429325.png)
@@ -156,6 +178,13 @@ The **Amplify [Hosting](https://aws.amazon.com/amplify/hosting/)** is an AWS ser
      - `Deploy` 선택
      - `amplify/backend/api/amplifyDatasource/schema.graphql` 확인 
        ![graphql](AWS_for_Mobile.assets\graphql.png)
+=======
+     - 폴더로 이동 ➡ [CLI] 아래의 명령어 실행 ![pull amplify](AWS_for_Mobile.assets\pull_amplify.png "pull amplify") ![image-20220618183429325](AWS_for_Mobile.assets\image-20220618183429325.png)
+     - 혹시 모를 상황에 대비하여 `sandboxId` 기록해두기
+     - 다음 단계들도 `Skip`
+     - `Deploy` 선택
+     - `amplify/backend/api/amplifyDatasource/schema.graphql` 확인 ![graphql](AWS_for_Mobile.assets\graphql.png "graphql")
+>>>>>>> Stashed changes
        - **id** - an auto-generated identifier field for a Todo item
        - **name** - a non-optional string field containing the name of a Todo item
        - **description** - an optional string field containing additional details about a Todo item
@@ -462,6 +491,7 @@ The **Amplify [Hosting](https://aws.amazon.com/amplify/hosting/)** is an AWS ser
     export default Home;
     ```
 
+<<<<<<< Updated upstream
   - [CLI] Expo 
     ![expo](AWS_for_Mobile.assets\expo_start.png)
 
@@ -475,6 +505,17 @@ The **Amplify [Hosting](https://aws.amazon.com/amplify/hosting/)** is an AWS ser
 
   - [CLI] React Native CLI on Android 
     ![android](AWS_for_Mobile.assets\react_native_cli_android.png)
+=======
+  - [CLI] Expo ![expo](AWS_for_Mobile.assets\expo_start.png)
+
+    ![image-20220618200945957](AWS_for_Mobile.assets\image-20220618200945957.png)
+
+    아직은 `Save Todo` 작동❌  ![image-20220618201043855](AWS_for_Mobile.assets\image-20220618201043855.png)
+
+  - [CLI] React Native CLI on iOS ![ios](AWS_for_Mobile.assets\react_native_cli_ios.png)
+
+  - [CLI] React Native CLI on Android ![android](AWS_for_Mobile.assets\react_native_cli_android.png "android")
+>>>>>>> Stashed changes
 
   
 
@@ -538,9 +579,13 @@ The **Amplify [Hosting](https://aws.amazon.com/amplify/hosting/)** is an AWS ser
      }
    ```
 
+<<<<<<< Updated upstream
 - 결과 
   ![image-20220618201735000](AWS_for_Mobile.assets\image-20220618201735000.png) 
   ![image-20220618201823195](AWS_for_Mobile.assets\image-20220618201823195.png)
+=======
+- 결과 ![image-20220618201735000](AWS_for_Mobile.assets\image-20220618201735000.png) ![image-20220618201823195](AWS_for_Mobile.assets\image-20220618201823195.png)
+>>>>>>> Stashed changes
 
 
 
@@ -560,31 +605,52 @@ The **Amplify [Hosting](https://aws.amazon.com/amplify/hosting/)** is an AWS ser
 
    - `Confirm deployment` 선택
 
+<<<<<<< Updated upstream
      ![amplify studio](AWS_for_Mobile\AWS_for_Mobile.assets\start_amplify_studio.png)
 
    - `Lauch Studio` 선택 
      ![lauch studio](AWS_for_Mobile\AWS_for_Mobile.assets\lauch_studio.png)
+=======
+     ![amplify studio](AWS_for_Mobile.assets\start_amplify_studio.png)
+
+   - `Lauch Studio` 선택 ![lauch studio](AWS_for_Mobile.assets\lauch_studio.png)
+>>>>>>> Stashed changes
 
 2. Add authentication
 
    - 사이드바에서 `Authentication` 선택
    - 기본 설정 유지 ➡ 하단에 `Save and deploy` 선택
+<<<<<<< Updated upstream
    - 배포 후, 상단에 `Deployment successful` 선택 
      ![](AWS_for_Mobile\AWS_for_Mobile.assets\deploy_done.png)
    - 안내에 따라 최신 버전으로 `pull` 
      ![amplify pull](AWS_for_Mobile.assets\amplify_pull.png)
+=======
+   - 배포 후, 상단에 `Deployment successful` 선택 ![](AWS_for_Mobile.assets\deploy_done.png)
+   - 안내에 따라 최신 버전으로 `pull` ![amplify pull](AWS_for_Mobile.assets\amplify_pull.png)
+>>>>>>> Stashed changes
 
 3. Verifying cloud sync
 
    - 사이드바에서 `Content` 선택
 
+<<<<<<< Updated upstream
    - Todo를 추가할 경우 `Content`에서 확인 가능 
      ![image-20220618212926975](AWS_for_Mobile.assets\image-20220618212926975.png)
 
    - 데이터 추가 
      ![Todo 추가](AWS_for_Mobile.assets\create_todo.png)
+=======
+   - Todo를 추가할 경우 `Content`에서 확인 가능 ![image-20220618212926975](AWS_for_Mobile.assets\image-20220618212926975.png)
+
+   - 데이터 추가 ![Todo 추가](AWS_for_Mobile.assets\create_todo.png)
+>>>>>>> Stashed changes
 
      ![Todo 추가](AWS_for_Mobile.assets\add_todo.png)
 
    - 결과 
+<<<<<<< Updated upstream
      ![image-20220618213530700](AWS_for_Mobile.assets\image-20220618213530700.png)
+=======
+    ![image-20220618213530700](AWS_for_Mobile.assets\image-20220618213530700.png)
+>>>>>>> Stashed changes
