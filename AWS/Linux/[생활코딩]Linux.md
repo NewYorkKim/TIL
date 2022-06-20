@@ -254,4 +254,49 @@
 
   ![image-20220615140304451]([생활코딩]Linux.assets/image-20220615140304451.png)
 
-  
+
+
+
+## Multi user
+
+- `id`: 내가 누구인지 확인
+
+  ![image-20220620153924934](C:\Users\NY\AppData\Roaming\Typora\typora-user-images\image-20220620153924934.png)
+
+- `who`: 현재 시스템에 누가 접속해 있는지 확인
+
+
+
+##### Root user
+
+- super(root) user
+  - 이름에 `root` 포함
+  - `su - root`: super user로 전환
+  - `~#` 
+  - `exit`: 로그아웃
+  - 몇몇 운영체제에서는 전환을 막아둠 ➡ `sudo passwd -u root`
+  - 다시 막고 싶을 때 ➡ `sudo passwd -l root`
+  - `/root`
+- user
+  - `sudo <명령어>`: 일시적으로 super user의 권한으로 명령어 실행 but 여전히 일반 user
+  - `~$`
+  - ⭐ 가급적이면 일반 user 상태를 유지하고 필요한 경우에는 `sudo` 사용
+  - `home/user_name`
+
+
+
+##### Add user
+
+- `sudo useradd -m <user_name>`: <user_name>이라는 사용자 추가
+
+  ![image-20220620155450151](C:\Users\NY\AppData\Roaming\Typora\typora-user-images\image-20220620155450151.png)
+
+- `sudo passwd <user_name>`: <user_name>이 사용할 비밀번호 설정
+
+  ![image-20220620155713389](C:\Users\NY\AppData\Roaming\Typora\typora-user-images\image-20220620155713389.png)
+
+- `su - <user_name>`: <user_name>으로 사용자 전환
+
+  ![image-20220620155811333](C:\Users\NY\AppData\Roaming\Typora\typora-user-images\image-20220620155811333.png)
+
+- `sudo usermod -a -G sudo <user_name>`: <user_name>에게 sudo를 사용할 수 있는 권한 부여
