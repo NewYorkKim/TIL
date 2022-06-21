@@ -13,7 +13,7 @@ dy = [0, 1, 0, -1]
 
 while True:
     if arr[x][y] == 0:
-        arr[x][y] = 2
+        arr[x][y] = -1
         cnt += 1
     move = False
     for i in range(4):

@@ -1,6 +1,6 @@
 # 스택과 큐
 
-> 2022/06/24
+> 2022/06/14
 
 `data structure` `algorithm` `python`
 
