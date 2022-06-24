@@ -113,3 +113,64 @@
   - Assures code quality, security, and fast, consistent deployments by repeatably progressing through the pipeline
   - Requires a well-integrated tool chain
 
+
+
+##### DevOps Tools
+
+- Cloud
+  - AWS
+- Development
+  - IDEs: AWS Cloud9, IntelliJ, Eclipse, Visual Studio Code
+  - SDKs: AWS SDK for Java, iPhone SDK
+  - Source code repositories: GitHub, AWS CodeCommit
+- CI/CD
+  - Build tools: Jenkins, Travis CI, AWS CodeBuild
+  - Source control tools, repositories: Git, AWS CodeCommit
+  - Deployment tools: AWS CodeDeploy, AWS CloudFormation
+  - Pipeline automation tools: AWS CodePipeline, Jenkins, GitLab
+- Infrastructure automation
+  - Infrastructure automation tools: AWS CloudFormation, Terraform, AWS Elastic Beanstalk
+  - Configuration management tools: Chef, Puppet, AWS OpsWorks
+- Containers and serverless
+  - Serverless services: AWS Lambda, AWS Fargate
+  - Container services:
+    - Runtimes: Docker, Continerd
+    - Orchestration: Amazon Elastic Container Service (Amazon ECS), Kubernetes, Amazon Elastic Kubernetes Service (Amazon EKS)
+- Monitoring and observability
+  - AWS X-Ray, Amazon CloudWatch, AWS Config, AWS CloudTrail
+
+
+
+## Amazon's DevOps Transformation
+
+- In the early 2000s, the amazon.com retail website was a large architectural monolith
+- Amazon quickly realized that they were slowed down by the development architecture and the organizational structure
+- Something needed to change for Amazon to increase the speed of development and velocity of deployment to focus on customer needs
+
+![ Siloed Development, Testing, and Operational teams](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1656072000/i9XlJtgBw-huDjMwIBxq_Q/tincan/674187_1645473379_p1fsetlfoloo1rhbas410e1pe9o_zip/assets/m00bf1BauwYKsygK_AhXvJlLCp7wVjjID.png)
+
+
+
+- Amazon decoupled development, moving towards a **service-oriented architecture**
+
+- They also created small, cross functional two-pizza teams consisting of 8-10 people
+
+  - Two-pizza teams aligned with services
+
+    ![Two-pizza teams aligned with services](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1656072000/i9XlJtgBw-huDjMwIBxq_Q/tincan/674187_1645473379_p1fsetlfoloo1rhbas410e1pe9o_zip/assets/xZxru9OgOByqiHRv_VB11OutPVbIfTI9d.png)
+
+- They realized that manual processes, hand-offs, and common release cycles were still causing delays. 
+
+- The monolithic architecture was completely decoupled into single-purposed services and soon became a **microservices solution**
+
+  - Two-pizza teams focusing on microservices solutions
+
+    ![Two-pizza teams focusing on microservices solutions](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1656072000/i9XlJtgBw-huDjMwIBxq_Q/tincan/674187_1645473379_p1fsetlfoloo1rhbas410e1pe9o_zip/assets/XKAjwmXmY0s2Ju4n_1FuJvRWxj9jK-r0N.png)
+
+
+
+- Amazon wanted agility, and transformation became their foundation for adopting DevOps
+
+
+
+##### Decompose for agility
