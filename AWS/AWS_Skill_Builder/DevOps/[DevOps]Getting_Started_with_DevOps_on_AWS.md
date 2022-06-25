@@ -170,7 +170,57 @@
 
 
 - Amazon wanted agility, and transformation became their foundation for adopting DevOps
+  - Decompose for agility
+  - Use tools and automate
+  - Transform the culture
 
 
 
-##### Decompose for agility
+
+## AWS DevOps Tools
+
+![mod4deveopstools.png](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1656162000/1M52SzSvMZaMhdWLUFfEyw/tincan/674187_1645473379_p1fsetlfoloo1rhbas410e1pe9o_zip/assets/wRSiz5fZvxOd08tj_ClI-xO3MRAOUGG8V.png)
+
+
+
+- AWS CodePipeline
+
+  - A continuous delivery service that enables you to model, visualize, and automate the steps required to release your software
+
+- AWS CodeCommit
+
+  - A fully managed source control service that hosts secure Git-based repositories
+
+- AWS CodeBuild
+
+  - A fully managed build service that automatically compiles source code, runs tests, and produces software packages
+
+    ![oO_FM6XoHJXMrlZ2-mod4codebuild.png](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1656162000/1M52SzSvMZaMhdWLUFfEyw/tincan/674187_1645473379_p1fsetlfoloo1rhbas410e1pe9o_zip/assets/I-QnnMXFShtm5dIU_hE-FC719tmKXOc3F.png)
+
+- AWS CodeDeploy
+
+  - A fully managed service that automates your software deployments, allowing you to deploy reliably and rapidly
+
+  - Automates code deployment to a variety of compute services, including Amazon Elastic Compute Cloud (Amazon EC2), AWS Fargate, AWS Lambda, or on-premises servers
+
+  - An example of a deployment to an Amazon EC2 compute environment
+
+    ![gGXZAkZG-j80XB8g-mod4codedeploy.png](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1656162000/1M52SzSvMZaMhdWLUFfEyw/tincan/674187_1645473379_p1fsetlfoloo1rhbas410e1pe9o_zip/assets/65u_jIJs74H-QylN_VDPDTdHeunvhaIX3.png)
+
+  
+
+##### Additional Services
+
+- Integrated development environment (IDE) services: AWS Cloud9
+- Infrastructure management services: AWS CloudFormation, AWS OpsWorks
+- Containers and serverless services: AWS Lambda, Amazon Elastic Container service (Amazon ECS)
+- Monitoring services: AWS X-Ray, Amazon CloudWatch, AWS Config, AWS CloudTrail
+
+
+
+- [AWS Documentation](https://docs.aws.amazon.com/)
+
+
+
+## AWS and DevOps Demo
+

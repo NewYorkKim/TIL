@@ -300,3 +300,35 @@
   ![image-20220620155811333]([생활코딩]Linux.assets\image-20220620155811333.png)
 
 - `sudo usermod -a -G sudo <user_name>`: <user_name>에게 sudo를 사용할 수 있는 권한 부여
+
+
+
+## Permission
+
+- User ➡ File & Directory
+
+- Read & Write & Excute
+
+  - r, w, x
+
+  
+
+![image-20220625235205351](C:\Users\NY\TIL\AWS\Linux\[생활코딩]Linux.assets\image-20220625235205351.png)
+
+- type: -
+- access mode: rw-rw-r--
+  - owner: rw-
+  - group: rw-
+  - other: r--
+- owner: ec2-user
+- group: ec2-user
+
+
+
+- `chmod`: 권한 변경 (change mode)
+
+  ![image-20220625235238498](C:\Users\NY\TIL\AWS\Linux\[생활코딩]Linux.assets\image-20220625235238498.png)
+
+
+
+- ![image-20220625235808075](C:\Users\NY\TIL\AWS\Linux\[생활코딩]Linux.assets\image-20220625235808075.png)

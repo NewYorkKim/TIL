@@ -42,9 +42,9 @@
   - [Introduction to the AWS Management Console](https://github.com/NewYorkKim/TIL/blob/master/AWS/AWS_Educate/%5BCloud_Computing%5DIntroduction_to_the_AWS_Management_Console.md)
   - [Introduction to Cloud 101](https://github.com/NewYorkKim/TIL/blob/master/AWS/AWS_Educate/%5BCloud_Computing%5DIntroduction_to_Cloud_101.md) `badge`
 - AWS Skill Builder
-  - [DevOps]()
+  - [DevOps](https://github.com/NewYorkKim/TIL/tree/master/AWS/AWS_Skill_Builder/DevOps)
 
-- AWS for Mobile
+- [AWS for Web&Mobile](https://github.com/NewYorkKim/TIL/blob/master/AWS/AWS_for_Web%26Mobile/AWS_for_Web%26Mobile.md)
 
 
 
