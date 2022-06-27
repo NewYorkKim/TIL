@@ -329,6 +329,15 @@
 
   ![image-20220625235238498](C:\Users\NY\TIL\AWS\Linux\[생활코딩]Linux.assets\image-20220625235238498.png)
 
+  - excute
+
+  ![image-20220625235808075](C:\Users\NY\TIL\AWS\Linux\[생활코딩]Linux.assets\image-20220625235808075.png)
+
+  ![image-20220625235954136](C:\Users\NY\TIL\AWS\Linux\[생활코딩]Linux.assets\image-20220625235954136.png)
+
+  ![image-20220626000036035](C:\Users\NY\TIL\AWS\Linux\[생활코딩]Linux.assets\image-20220626000036035.png)
+
+  ![image-20220626000205302](C:\Users\NY\TIL\AWS\Linux\[생활코딩]Linux.assets\image-20220626000205302.png)
 
 
-- ![image-20220625235808075](C:\Users\NY\TIL\AWS\Linux\[생활코딩]Linux.assets\image-20220625235808075.png)
+
