@@ -261,7 +261,7 @@
 
 - `id`: 내가 누구인지 확인
 
-  ![image-20220620153924934]([생활코딩]Linux.assets\image-20220620153924934.png)
+  ![image-20220620153924934]([생활코딩]Linux.assets/image-20220620153924934.png)
 
 - `who`: 현재 시스템에 누가 접속해 있는지 확인
 
@@ -289,15 +289,15 @@
 
 - `sudo useradd -m <user_name>`: <user_name>이라는 사용자 추가
 
-  ![image-20220620155450151]([생활코딩]Linux.assets\image-20220620155450151.png)
+  ![image-20220620155450151]([생활코딩]Linux.assets/image-20220620155450151.png)
 
 - `sudo passwd <user_name>`: <user_name>이 사용할 비밀번호 설정
 
-  ![image-20220620155713389]([생활코딩]Linux.assets\image-20220620155713389.png)
+  ![image-20220620155713389]([생활코딩]Linux.assets/image-20220620155713389.png)
 
 - `su - <user_name>`: <user_name>으로 사용자 전환
 
-  ![image-20220620155811333]([생활코딩]Linux.assets\image-20220620155811333.png)
+  ![image-20220620155811333]([생활코딩]Linux.assets/image-20220620155811333.png)
 
 - `sudo usermod -a -G sudo <user_name>`: <user_name>에게 sudo를 사용할 수 있는 권한 부여
 
@@ -313,7 +313,7 @@
 
   
 
-![image-20220625235205351](C:\Users\NY\TIL\AWS\Linux\[생활코딩]Linux.assets\image-20220625235205351.png)
+![image-20220625235205351]([생활코딩]Linux.assets/image-20220625235205351.png)
 
 - type: -
 - access mode: rw-rw-r--
@@ -327,17 +327,17 @@
 
 - `chmod`: 권한 변경 (change mode)
 
-  ![image-20220625235238498](C:\Users\NY\TIL\AWS\Linux\[생활코딩]Linux.assets\image-20220625235238498.png)
+  ![image-20220625235238498]([생활코딩]Linux.assets/image-20220625235238498.png)
 
   - excute
 
-  ![image-20220625235808075](C:\Users\NY\TIL\AWS\Linux\[생활코딩]Linux.assets\image-20220625235808075.png)
+  ![image-20220625235808075]([생활코딩]Linux.assets/image-20220625235808075.png)
 
-  ![image-20220625235954136](C:\Users\NY\TIL\AWS\Linux\[생활코딩]Linux.assets\image-20220625235954136.png)
+  ![image-20220625235954136]([생활코딩]Linux.assets/image-20220625235954136.png)
 
-  ![image-20220626000036035](C:\Users\NY\TIL\AWS\Linux\[생활코딩]Linux.assets\image-20220626000036035.png)
+  ![image-20220626000036035]([생활코딩]Linux.assets/image-20220626000036035.png)
 
-  ![image-20220626000205302](C:\Users\NY\TIL\AWS\Linux\[생활코딩]Linux.assets\image-20220626000205302.png)
+  ![image-20220626000205302]([생활코딩]Linux.assets/image-20220626000205302.png)
 
 
 

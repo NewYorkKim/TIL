@@ -1,4 +1,4 @@
-# TypeScript로 블록체인 만들기: Assignment 01
+# TypeScript로 블록체인 만들기: Day 01
 
 > 2022/06/27
 
