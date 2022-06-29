@@ -1,6 +1,6 @@
 # Getting Started with DevOps on AWS
 
-> 2022/06/21 ~ ing
+> 2022/06/21 ~ 2022/06/29
 
 - source: [AWS Skill Builder](https://explore.skillbuilder.aws/learn/course/2000/play/41907/getting-started-with-devops-on-aws;lp=85)
 
@@ -224,3 +224,6 @@
 
 ## AWS and DevOps Demo
 
+##### Demo Overview
+
+![XDwH1f26S8JYpKEm-mod5diagramdemo.png](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1656514800/lVaGupuiH-1hmPwnXPk12A/tincan/674187_1645473379_p1fsetlfoloo1rhbas410e1pe9o_zip/assets/69PJt8uUSsDofovL_DjfBEUAbwqw7ENY7.png)

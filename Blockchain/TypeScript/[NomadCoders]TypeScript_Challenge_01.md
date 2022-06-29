@@ -2,7 +2,7 @@
 
 > 2022/06/27
 
-- source: [TypeScript로 블록체인 만들기]()
+- source: [TypeScript로 블록체인 만들기](https://nomadcoders.co/typescript-for-beginners)
 
 `TypeScript` `Blockchain` `VSCode`
 
