@@ -1,4 +1,4 @@
-# Linux 기초
+Linux 기초
 
 > 2022/05/27 ~ ing
 
@@ -338,6 +338,16 @@
   ![image-20220626000036035]([생활코딩]Linux.assets/image-20220626000036035.png)
 
   ![image-20220626000205302]([생활코딩]Linux.assets/image-20220626000205302.png)
-
-
-
+  
+  - directory
+  
+  ![image-20220701174103514]([생활코딩]Linux.assets/image-20220701174103514.png)![image-20220701174233469]([생활코딩]Linux.assets/image-20220701174233469.png)![image-20220701174302420]([생활코딩]Linux.assets/image-20220701174302420.png)![image-20220701174340209]([생활코딩]Linux.assets/image-20220701174340209.png)
+  
+  ![image-20220701174539000]([생활코딩]Linux.assets/image-20220701174539000.png)
+  
+  - Octal modes
+  
+    ![image-20220701175242832]([생활코딩]Linux.assets/image-20220701175242832.png)![image-20220701175454766]([생활코딩]Linux.assets/image-20220701175454766.png)
+  
+  - 레퍼런스![image-20220701175717872]([생활코딩]Linux.assets/image-20220701175717872.png)
+  - 연산자![image-20220701175748632]([생활코딩]Linux.assets/image-20220701175748632.png)

@@ -4,7 +4,7 @@
 
 - source: [AWS Skill Builder](https://explore.skillbuilder.aws/learn/course/2000/play/41907/getting-started-with-devops-on-aws;lp=85)
 
-![image-20220630235041579]([DevOps]Getting_Started_with_DevOps_on_AWS.assets/image-20220630235041579.png)
+![image-20220630235041579](DevOps/image-20220630235041579.png)
 
 
 
