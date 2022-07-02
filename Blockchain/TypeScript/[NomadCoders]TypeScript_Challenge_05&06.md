@@ -1,6 +1,6 @@
-# TypeScript로 블록체인 만들기: Day 05
+# TypeScript로 블록체인 만들기: Day 05&06
 
-> 2022/07/01
+> 2022/07/01 ~ 2022/07/02
 
 - source: [TypeScript로 블록체인 만들기](https://nomadcoders.co/typescript-for-beginners)
 
@@ -125,7 +125,7 @@ user01.firstName  // protected; 접근 불가능
 
 
 
-## Assignment 05
+## Assignment 05&06
 
 - Challenge: `submit`
 
