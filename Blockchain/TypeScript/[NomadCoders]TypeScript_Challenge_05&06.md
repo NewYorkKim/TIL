@@ -46,7 +46,7 @@ abstract class User {
 class Player extends User {
 
 }
-const user01 = new Player("user01", "las", "user")
+const user01 = new Player("user01", "last", "user")
 user01.nickName
 ```
 
@@ -58,14 +58,14 @@ abstract class User {
         public nickName: string
     ) {}
 	getFullName(){
-        return ${this.firstName} ${this.lastName}
+        return `${this.firstName} ${this.lastName}`
 	}
 }
 
 class Player extends User {
 
 }
-const user01 = new Player("user01", "las", "user")
+const user01 = new Player("user01", "last", "user")
 user01.getFullName()
 ```
 
@@ -86,7 +86,7 @@ abstract class User {
     ) {}
     abstract getNickName(): void  // 추상메소드; call signature
 	getFullName(){
-    	return ${this.firstName} ${this.lastName}
+    	return `${this.firstName} ${this.lastName}`
 	}
 }
 
@@ -96,7 +96,7 @@ class Player extends User {
     }
 
 }
-const user01 = new Player("user01", "las", "user")
+const user01 = new Player("user01", "last", "user")
 user01.getFullName()
 ```
 
@@ -109,7 +109,7 @@ abstract class User {
     ) {}
     abstract getNickName(): void  
 	getFullName(){
-    	return ${this.firstName} ${this.lastName}
+    	return `${this.firstName} ${this.lastName}`
 	}
 }
 
@@ -119,13 +119,13 @@ class Player extends User {
     }
 
 }
-const user01 = new Player("user01", "las", "user")
+const user01 = new Player("user01", "last", "user")
 user01.firstName  // protected; 접근 불가능
 ```
 
 
 
-## Assignment 05&06
+## Assignment 05
 
 - Challenge: `submit`
 
