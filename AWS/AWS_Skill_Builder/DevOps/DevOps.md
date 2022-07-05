@@ -69,7 +69,122 @@
 
 
 
-##### AWS CDK Demonstration
+## AWS CDK Core Components
+
+##### What are constructs?
+
+- The *core components* that power AWS CDK applications are composed of *apps, stacks, and constructs*
+- Constructs are the main building blocks used to form stacks and apps
+- Represents a cloud components and encapsulates everything that AWS CloudFormation needs to create the components
+
+![module2_what_are_constructs.png](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1657033200/LsvhsTmzoLBxveGRv_0y7A/tincan/b450fd4f5b346b88f24b2c75349b1a15f069c464/assets/gnRIGbouZulnljiw_5okXExLCWWEJUlas.png)
 
 
+
+- Can represents a single AWS Cloud resource, such as an Amazon VPC endpoint, or it can represent a single component consisting of multiple AWS resources within a vpc
+- AWS CDK uses compositions to define complex constructs
+  - A composition establishes a parent-child build hierarchy
+
+![AWS CDK construct code example](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1657033200/LsvhsTmzoLBxveGRv_0y7A/tincan/b450fd4f5b346b88f24b2c75349b1a15f069c464/assets/hPD_EnjC_HZ248ws_tAZK3jJyhiZ963wM.png)
+
+
+
+- The composition of constructs means that you can define reusable components and share them like any other code
+
+![module2_reusable_components.png](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1657033200/LsvhsTmzoLBxveGRv_0y7A/tincan/b450fd4f5b346b88f24b2c75349b1a15f069c464/assets/EBJtL8XbFx3k3vBV_PYnrrNsFDAZzhiVn.png)
+
+
+
+- Constructs are implemented in classes that extend the *Construct* base class
+- All constructs take three parameters when they are initialized: scope, id, and props
+  - Scope: The construct in which this construct is created: `this`
+  - Id: The local identifier of the construct that must be unique within this scope: `MyVpc`
+  - Props: A set of initialization properties that are specific to each construct and define its initial configuration: `maxAzs`, `cidr`, and `subnetConfiguration`
+
+![TypeScript construct code example with its scope, id, and props initialized for a VPC](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1657033200/LsvhsTmzoLBxveGRv_0y7A/tincan/b450fd4f5b346b88f24b2c75349b1a15f069c464/assets/p7SvSpBgOtWm4zre_EIwObwGXLL6NirSM.png)
+
+
+
+- You can build your own constructs when you want to:
+  - Organize your project
+  - Streamline your deployment processes
+  - Package the construct into a npm module
+  - Then, publish the construct to npmjs.org to share with developers outside your organization
+
+![module2_building_your_own_constructs.png](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1657033200/LsvhsTmzoLBxveGRv_0y7A/tincan/b450fd4f5b346b88f24b2c75349b1a15f069c464/assets/2BuUkFpFLx54BecK_f5J5xiTMN4YLcnYd.png)
+
+
+
+##### Using Predefined Constructs for AWS resources
+
+- The AWS CDK includes the AWS Construct Library to ensure that developers have access to all AWS resources while building their apps
+
+![AWS CDK construct code highlighting the s3.Bucket class.](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1657033200/LsvhsTmzoLBxveGRv_0y7A/tincan/b450fd4f5b346b88f24b2c75349b1a15f069c464/assets/9oT31vasGDBejEsY_0IAb3-7llPeDDk16.png)
+
+
+
+- Levels of constructs
+  - The library contains three levels of constructs: AWS CDK, pattern constructs, AWS resource constructs, and AWS CloudFormation resource constructs
+  - Level 1 (L1)
+    - Directly represents all the AWS resources available in AWS CloudFormation
+  - Level 2 (L2)
+    - Includes AWS includes AWS resource constructs
+  - Level 3 (L3)
+    - Are designed to help you complete common tasks in AWS using various resources, such as Fargate container cluster employing an Application Load Balancer
+
+![module2_levels_of_constructs_.png](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1657033200/LsvhsTmzoLBxveGRv_0y7A/tincan/b450fd4f5b346b88f24b2c75349b1a15f069c464/assets/280T1FsfRaYt--1S_uAkE2vXFKk14lDy2.png)
+
+
+
+- AWS CDK pattern constructs
+  - Level 3 includes AWS CDK pattern constructs, developed by AWS engineers, and provides opinionated best-practice patterns by default
+  - These higher-level constructs stitch together multiple resources and generally represent reference architectures or design patterns to help you complete common tasks in AWS
+  - `ecs_patterns.ApplicationLoadBalancedFargateService` construct represents an architecture that includes a Fargate container cluster employing an Application Load Balancer
+
+![module2_AWS_CDK_construct_AWS_engineers.png](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1657033200/LsvhsTmzoLBxveGRv_0y7A/tincan/b450fd4f5b346b88f24b2c75349b1a15f069c464/assets/Axp27wTtKfcCuAZg_7Y9QRQysb7cM3ioa.png)
+
+![module2_CDK_pattern_constructs.png](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1657033200/LsvhsTmzoLBxveGRv_0y7A/tincan/b450fd4f5b346b88f24b2c75349b1a15f069c464/assets/WdZ9e2y-Q2rzArmh_0eCCUx6XX1sxHeFz.png)
+
+
+
+- AWS resource constructs
+
+  - AWS resource constructs represent AWS resources but with a higher level of purpose
+
+  - Provide the same resource functionality, but they handle many of the details required by AWS CloudFormation resource constructs
+
+![module2_AWS_resource_contructs.png](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1657033200/LsvhsTmzoLBxveGRv_0y7A/tincan/b450fd4f5b346b88f24b2c75349b1a15f069c464/assets/-2GCn-GFYPZqTSKO_2HAxZ-AKzNH_gZJW.png)
+
+
+
+- AWS CloudFormation resource constructs
+  - The lowest-level (L1) constructs
+  - Mirror the AWS CloudFormation resource types and are updated with each release of AWS CDK
+
+![module2_CFN_resource_constructs.png](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1657033200/LsvhsTmzoLBxveGRv_0y7A/tincan/b450fd4f5b346b88f24b2c75349b1a15f069c464/assets/uBF-op6salpFc_s0_icaDIgDAlEz8FraB.png)
+
+
+
+##### App and Stacks
+
+- The standard AWS CDK development workflow is similar to the common workflow that you use as a developer
+
+![module2_Apps_and_Stacks.png](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1657033200/LsvhsTmzoLBxveGRv_0y7A/tincan/b450fd4f5b346b88f24b2c75349b1a15f069c464/assets/35iXDRdrjn8Nk9hW_o1GeBcztj7Zu-nXK.png)
+
+
+
+- The App construct
+  - Every AWS CDK application is represented by the AWS CDK class APP
+  - The App construct represents the entire AWS CDK app
+
+![App construct defined as CdkPrimerStack](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1657033200/LsvhsTmzoLBxveGRv_0y7A/tincan/b450fd4f5b346b88f24b2c75349b1a15f069c464/assets/BcWpSo1VwpOHyIwJ_WaIR-4NOQe86N2NC.png)
+
+
+
+- Nested stacks
+  - AWS CDK gains its deployment power from AWS CloudFormation
+  - However, it is also bound by AWS CloudFormation resource limit of 200 resources
+  - A way around the resource limit is to create a nested stack
+
+![module2_nested_stacks.png](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1657033200/LsvhsTmzoLBxveGRv_0y7A/tincan/b450fd4f5b346b88f24b2c75349b1a15f069c464/assets/I60wZKU7T-vLcMN4_x8d81O70Or0zJN2x.png)
 

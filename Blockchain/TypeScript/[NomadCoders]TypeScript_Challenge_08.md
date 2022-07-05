@@ -8,7 +8,7 @@
 
 
 
-## Functions
+## Classes and Interfaces
 
 ##### Interfaces
 
