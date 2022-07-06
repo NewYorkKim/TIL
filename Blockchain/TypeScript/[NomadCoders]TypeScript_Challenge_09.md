@@ -1,6 +1,6 @@
-# TypeScript로 블록체인 만들기: Day 09
+# TypeScript로 블록체인 만들기: Day 09&10
 
-> 2022/07/05
+> 2022/07/05 ~ 2022/07/06
 
 - source: [TypeScript로 블록체인 만들기](https://nomadcoders.co/typescript-for-beginners)
 
@@ -49,3 +49,8 @@ booleansStorage.get("xxx")
 booleansStorage.set("hello", true)
 ```
 
+
+
+## Assignment 07
+
+- Challenge: `submit`
