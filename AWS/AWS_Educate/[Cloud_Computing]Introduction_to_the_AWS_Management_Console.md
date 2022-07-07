@@ -26,7 +26,7 @@
 
 
 
-# Understand billing considerations
+## Understand billing considerations
 
 - Pay as you go
 - Service cost factors
@@ -37,7 +37,7 @@
 
 
 
-# Gain hands-on experience
+## Gain hands-on experience
 
 ##### EC2 (Free tier)
 

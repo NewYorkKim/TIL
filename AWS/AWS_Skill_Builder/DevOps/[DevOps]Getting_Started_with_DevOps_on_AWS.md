@@ -16,7 +16,7 @@
 
 
 
-![An infinity loop formed by the software lifecycle stages is a common depiction of the ongoing collaboration and efficiencies suggested by DevOps.](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1655827200/B4TTCa1aVTfAZDnVr5mS9Q/tincan/674187_1645473379_p1fsetlfoloo1rhbas410e1pe9o_zip/assets/fWsC1cyKiH4aaLvB_CYv4rrnC2UUazpsm.png)
+![An infinity loop formed by the software lifecycle stages is a common depiction of the ongoing collaboration and efficiencies suggested by DevOps.](DevOps/fWsC1cyKiH4aaLvB_CYv4rrnC2UUazpsm.png)
 
 
 
@@ -46,7 +46,7 @@
 
  
 
-![Development phases supported by siloed and specialized teams cause delays and are costly.](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1655827200/B4TTCa1aVTfAZDnVr5mS9Q/tincan/674187_1645473379_p1fsetlfoloo1rhbas410e1pe9o_zip/assets/j_Nv_xAfixC0CuJA_Y2nQWshkYs7a7SSU.png)
+![Development phases supported by siloed and specialized teams cause delays and are costly.](DevOps/j_Nv_xAfixC0CuJA_Y2nQWshkYs7a7SSU.png)
 
 
 
@@ -66,13 +66,13 @@
 
 - [Accelerate State of DevOps 2019 Report](https://services.google.com/fh/files/misc/state-of-devops-2019.pdf)
 
-![Source: Accelerate State of DevOps 2019, DevOps Research and Assessment (DORA)](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1655827200/B4TTCa1aVTfAZDnVr5mS9Q/tincan/674187_1645473379_p1fsetlfoloo1rhbas410e1pe9o_zip/assets/Yk-qXajQSpITY_9H_jNMjFOR-QD6vD_Rv.png)
+![Source: Accelerate State of DevOps 2019, DevOps Research and Assessment (DORA)](DevOps/Yk-qXajQSpITY_9H_jNMjFOR-QD6vD_Rv.png)
 
 
 
 - The benefits of DevOps
 
-![m1_whydevops2.png](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1655827200/B4TTCa1aVTfAZDnVr5mS9Q/tincan/674187_1645473379_p1fsetlfoloo1rhbas410e1pe9o_zip/assets/Ksws8--SZ09uws65_VqktCOya5QHnGAky.png)
+![m1_whydevops2.png](DevOps/Ksws8--SZ09uws65_VqktCOya5QHnGAky.png)
 
 
 
@@ -107,7 +107,7 @@
 
 - DevOps lifecycle stages
 
-![m2devoplifecyclestagesepng.png](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1655827200/B4TTCa1aVTfAZDnVr5mS9Q/tincan/674187_1645473379_p1fsetlfoloo1rhbas410e1pe9o_zip/assets/OuvWgnqgR3sPM_k2_YbZDu2_Tf8JnkJqp.png)
+![m2devoplifecyclestagesepng.png](DevOps/OuvWgnqgR3sPM_k2_YbZDu2_Tf8JnkJqp.png)
 
 
 
@@ -149,7 +149,7 @@
 - Amazon quickly realized that they were slowed down by the development architecture and the organizational structure
 - Something needed to change for Amazon to increase the speed of development and velocity of deployment to focus on customer needs
 
-![ Siloed Development, Testing, and Operational teams](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1656072000/i9XlJtgBw-huDjMwIBxq_Q/tincan/674187_1645473379_p1fsetlfoloo1rhbas410e1pe9o_zip/assets/m00bf1BauwYKsygK_AhXvJlLCp7wVjjID.png)
+![ Siloed Development, Testing, and Operational teams](DevOps/m00bf1BauwYKsygK_AhXvJlLCp7wVjjID.png)
 
 
 
@@ -159,7 +159,7 @@
 
   - Two-pizza teams aligned with services
 
-    ![Two-pizza teams aligned with services](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1656072000/i9XlJtgBw-huDjMwIBxq_Q/tincan/674187_1645473379_p1fsetlfoloo1rhbas410e1pe9o_zip/assets/xZxru9OgOByqiHRv_VB11OutPVbIfTI9d.png)
+    ![Two-pizza teams aligned with services](DevOps/xZxru9OgOByqiHRv_VB11OutPVbIfTI9d.png)
 
 - They realized that manual processes, hand-offs, and common release cycles were still causing delays. 
 
@@ -167,7 +167,7 @@
 
   - Two-pizza teams focusing on microservices solutions
 
-    ![Two-pizza teams focusing on microservices solutions](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1656072000/i9XlJtgBw-huDjMwIBxq_Q/tincan/674187_1645473379_p1fsetlfoloo1rhbas410e1pe9o_zip/assets/XKAjwmXmY0s2Ju4n_1FuJvRWxj9jK-r0N.png)
+    ![Two-pizza teams focusing on microservices solutions](DevOps/XKAjwmXmY0s2Ju4n_1FuJvRWxj9jK-r0N.png)
 
 
 
@@ -181,7 +181,7 @@
 
 ## AWS DevOps Tools
 
-![mod4deveopstools.png](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1656162000/1M52SzSvMZaMhdWLUFfEyw/tincan/674187_1645473379_p1fsetlfoloo1rhbas410e1pe9o_zip/assets/wRSiz5fZvxOd08tj_ClI-xO3MRAOUGG8V.png)
+![mod4deveopstools.png](DevOps/wRSiz5fZvxOd08tj_ClI-xO3MRAOUGG8V.png)
 
 
 
@@ -197,7 +197,7 @@
 
   - A fully managed build service that automatically compiles source code, runs tests, and produces software packages
 
-    ![oO_FM6XoHJXMrlZ2-mod4codebuild.png](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1656162000/1M52SzSvMZaMhdWLUFfEyw/tincan/674187_1645473379_p1fsetlfoloo1rhbas410e1pe9o_zip/assets/I-QnnMXFShtm5dIU_hE-FC719tmKXOc3F.png)
+    ![oO_FM6XoHJXMrlZ2-mod4codebuild.png](DevOps/I-QnnMXFShtm5dIU_hE-FC719tmKXOc3F.png)
 
 - AWS CodeDeploy
 
@@ -207,7 +207,7 @@
 
   - An example of a deployment to an Amazon EC2 compute environment
 
-    ![gGXZAkZG-j80XB8g-mod4codedeploy.png](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1656162000/1M52SzSvMZaMhdWLUFfEyw/tincan/674187_1645473379_p1fsetlfoloo1rhbas410e1pe9o_zip/assets/65u_jIJs74H-QylN_VDPDTdHeunvhaIX3.png)
+    ![gGXZAkZG-j80XB8g-mod4codedeploy.png](DevOps/65u_jIJs74H-QylN_VDPDTdHeunvhaIX3.png)
 
   
 
@@ -226,6 +226,8 @@
 
 ## AWS and DevOps Demo
 
-##### Demo Overview
+##### Demo: Create and Control a CI/CD Pipeline
 
-![XDwH1f26S8JYpKEm-mod5diagramdemo.png](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1656514800/lVaGupuiH-1hmPwnXPk12A/tincan/674187_1645473379_p1fsetlfoloo1rhbas410e1pe9o_zip/assets/69PJt8uUSsDofovL_DjfBEUAbwqw7ENY7.png)
+
+
+![XDwH1f26S8JYpKEm-mod5diagramdemo.png](DevOps/69PJt8uUSsDofovL_DjfBEUAbwqw7ENY7.png)
