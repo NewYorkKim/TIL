@@ -33,3 +33,43 @@
 
     ![image-20220708000939483](C:\Users\NY\TIL\Blockchain\TypeScript\[NomadCoders]TypeScript_Challenge.assets\image-20220708000939483.png)
 
+
+
+##### Lib Configuration
+
+- `lib`: 라이브러리의 **정의 파일**을 특정해주는 역할
+  - 자바스크립트의 어떤 버전이 그 환경에서 사용되는지 (런타임 환경)
+  - `DOM` (브라우저) ➡ 타입스크립트 파일에서 `document` 사용 가능
+
+
+
+##### Declaration Files
+
+- 타입 정의: 타입스크립트에게 자바스크립트 코드 타입을 설명해주기 위해 사용 ➡ `d.ts`
+
+```typescript
+interface Config {
+    url: string
+}
+declare module "myPackage" {
+    function init(config: Config): boolean;
+    function exit(code: number): number;
+}
+```
+
+
+
+##### JSDoc
+
+- `@ts-check`: 타입스크립트 파일에게 자바스크립트 파일을 확인하라고 알림
+- `JSDoc`: 코멘트
+
+![image-20220710182339271]([NomadCoders]TypeScript_Challenge.assets/image-20220710182339271.png)
+
+![image-20220710182158769]([NomadCoders]TypeScript_Challenge.assets/image-20220710182158769.png)
+
+
+
+## Assignment 08
+
+- Quiz: `8/8`
