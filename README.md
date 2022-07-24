@@ -61,6 +61,6 @@
 
 - TypeScript
 
-  - [NomadCoders] TypeScript로 블록체인 만들기
+  - [[NomadCoders] TypeScript로 블록체인 만들기](https://github.com/NewYorkKim/TIL/tree/master/Blockchain/TypeScript)
 
   
