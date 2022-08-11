@@ -85,15 +85,15 @@ class DataCrawler:
         self.convert_to_df(all_data)
 
     def convert_to_df(self, data):
-        df = pd.DataFrame(data, columns = ['주종명','주종','재료','도수','용량','이미지', '수상내역','기타', '상세설명','페어링 음식','양조장_이름','양조장_주소','양조장_홈페이지','양조장_전화번호']) 
+        df = pd.DataFrame(data, columns = ['sul_name','sul_type','sul_material','sul_alcohol','sul_capacity','sul_img', 'sul_prize','sul_etc', 'sul_detail_info','sul_match_food','distillery_name','distillery_address','distillery_homepage','distillery_phone']) 
 
         self.update_db(df)
 
     def update_db(self, df):
-        df.to_sql('sool_data', self.conn, if_exists='replace')
+        df.to_sql('sul_data', self.conn, if_exists='replace')
         self.conn.commit()
 
-        new = pd.read_sql("SELECT * FROM sool_data", self.conn, index_col=None)
+        new = pd.read_sql("SELECT * FROM sul_data", self.conn, index_col=None)
         print(new) # 확인
 
         self.conn.close()
@@ -101,4 +101,4 @@ class DataCrawler:
         print('작업이 완료되었습니다.')
     
 
-# dc = DataCrawler()
+dc = DataCrawler()
