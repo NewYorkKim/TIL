@@ -1,40 +1,35 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-// import SQLite from 'react-native-sqlite-storage';
+import * as FileSystem from "expo-file-system";
+import { Asset } from 'expo-asset';
 import * as SQLite from 'expo-sqlite';
-// import { initDatabaseConfig } from '../configs/SqliteConfig';
-import { useState, useEffect } from 'react';
 
-function openDatabase() {
-  if (Platform.OS === "web") {
-    return {
-      transaction: () => {
-        return {
-          executeSql: () => {},
-        };
-      },
-    };
-  }
-
-  const db = SQLite.openDatabase("thesool.db");
-  return db;
-}
-
-const db = openDatabase();
+FileSystem.downloadAsync(
+  Asset.fromModule(require("./assets/database/thesool.db")).uri,
+  `${FileSystem.documentDirectory}SQLite/thesool.db`
+)
+.then(function(){
+  const db = SQLite.openDatabase('thesool.db')
+  console.log(db);
+  db.transaction(function(tx) {
+      tx.executeSql(
+        'SELECT * FROM sul_data;',
+        [],
+        function(tx, res) {
+          console.log(res.rows.length);
+        },
+        function(tx, err) {
+          console.log(err)
+        }
+      )
+    });
+  })
+  .catch(error =>{
+      console.error(error)
+})
 
 export default function App() {
-  const [items, setItems] = useState(null);
 
-  useEffect(() => {
-    db.transaction((tx) => {
-      tx.executeSql(
-        `SELECT * FROM sul_data;`, 
-        [], 
-        (_, { rows: {_array} }) => setItems(_array)
-      );
-    });
-  }, []);
-  
   return (
     <View style={styles.container}>
       <Text>'Hello'</Text>
