@@ -1,11 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Alert } from 'react-native';
-import { getDatabase } from './sul';
+import { StyleSheet, Text, View, FlatList } from 'react-native';
+import firebase from "firebase";
 
 export default function App() {
-  useEffect (() => { // SQLite to Firebase
-    getDatabase();
-  }, []);
+  const db = firebase.firestore();
 
   return (
     <View style={styles.container}>
