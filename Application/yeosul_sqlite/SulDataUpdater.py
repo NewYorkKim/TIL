@@ -4,7 +4,7 @@ import re
 import pandas as pd
 import sqlite3
 
-class DataCrawler:
+class SulDataUdate:
     def __init__(self):
         self.conn = sqlite3.connect("thesool.db")
 
@@ -85,7 +85,7 @@ class DataCrawler:
         self.convert_to_df(all_data)
 
     def convert_to_df(self, data):
-        df = pd.DataFrame(data, columns = ['sul_name','sul_type','sul_material','sul_alcohol','sul_capacity','sul_img', 'sul_prize','sul_etc', 'sul_detail_info','sul_match_food','distillery_name','distillery_address','distillery_homepage','distillery_phone']) 
+        df = pd.DataFrame(data, columns=['sul_name','sul_type','sul_material','sul_alcohol','sul_capacity','sul_img', 'sul_prize','sul_etc', 'sul_detail_info','sul_match_food','distillery_name','distillery_address','distillery_homepage','distillery_phone']) 
 
         self.update_db(df)
 
@@ -101,4 +101,4 @@ class DataCrawler:
         print('작업이 완료되었습니다.')
     
 
-dc = DataCrawler()
+sd = SulDataUpdate()

@@ -3,31 +3,10 @@ import { StyleSheet, Text, Image, View, ScrollView, ActivityIndicator } from 're
 import * as FileSystem from "expo-file-system";
 import { Asset } from 'expo-asset';
 import * as SQLite from 'expo-sqlite';
+import { Dimensions } from 'react-native';
 import React, { useState, useEffect } from "react";
 
-// FileSystem.downloadAsync(
-//   Asset.fromModule(require("./assets/database/thesool.db")).uri,
-//   `${FileSystem.documentDirectory}SQLite/thesool.db`
-// )
-//   try {
-//     const db = SQLite.openDatabase('thesool.db')
-//     console.log(db);
-//     db.transaction(function(tx) {
-//         tx.executeSql(
-//           'SELECT * FROM sul_data;',
-//           [],
-//           function(tx, res) {
-//             console.log(res.rows.length);
-//           },
-//           function(tx, err) {
-//             console.error(err)
-//           }
-//         )
-//       });
-//     }
-//   catch (err) {
-//       console.error(err)
-// }
+const deviceWidth = Dimensions.get('window').width;
 
 export default function App() {
   const [loading, setLoading] = useState("Loading...");
@@ -122,7 +101,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   listContainer: {
-    width: 280, // device screen width으로 수정
+    width: deviceWidth-20,
     borderRadius: 10,
     borderColor: "grey",
     borderWidth: 1,

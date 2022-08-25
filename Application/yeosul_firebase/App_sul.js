@@ -5,23 +5,23 @@ import firebase  from './firebase';
 
 export default function App() {
   const [loading, setLoading] = useState("Loading...");
-  const [fsvList, setFsvList] = useState({});
-  const fsvCollection = firebase.collection("festival");
-  function getFsvDocs () {
+  const [sulList, setSulList] = useState({});
+  const sulCollection = firebase.collection("sool");
+  function getSulDocs () {
     var temp = {};
-    fsvCollection.get().then(docs => {
+    sulCollection.get().then(docs => {
       docs.forEach((doc) => {
         temp[Object.keys(doc.data())] = Object.values(doc.data());
       });
     });
-   setFsvList(temp);
-   setLoading("지역축제 사전");
-   console.log(Object.keys(fsvList).length);
-   console.log(fsvList);
+   setSulList(temp);
+   setLoading("전통주 사전");
+   console.log(Object.keys(sulList).length);
+   console.log(sulList);
   }
 
   useEffect(() => {
-    getFsvDocs();
+    getSulDocs();
   }, []);
 
   return (
