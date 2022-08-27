@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, FlatList, ActivityIndicator, Dimensions, Image } from 'react-native';
+import { StyleSheet, Text, View, FlatList, ActivityIndicator, Dimensions, Linking } from 'react-native';
 import React, { useState, useEffect } from "react";
 import firebase  from './firebase';
 
@@ -7,21 +7,20 @@ const deviceWidth = Dimensions.get('window').width;
 
 export default function App() {
   const [loading, setLoading] = useState("Loading...");
-  const [sulList, setSulList] = useState({});
-  const sulCollection = firebase.collection("sool_test");
+  const [fsvlList, setFsvlList] = useState({});
+  const fsvlCollection = firebase.collection("festival_test");
   const getFsvDocs = async () => {
-    const dataSnapShot = (await sulCollection.doc("init").get()).data();
+    const dataSnapShot = (await fsvlCollection.doc("init").get()).data();
     const dataCols = Object.keys(dataSnapShot);
-    const sulName = dataSnapShot['name'];
+    const fsvlName = dataSnapShot['fstvlNm'];
     const data = [];
-    for (let i = 0; i < sulName.length; i++) {
+    for (let i = 0; i < fsvlName.length; i++) {
       let temp = {};
       dataCols.map(x => temp[x] = dataSnapShot[x][i]);
       data.push(temp);
     }
-    setSulList(data);
-    setLoading("전통주 사전");
-    console.log(dataSnapShot);
+    setFsvlList(data);
+    setLoading("지역축제 사전");
   }
 
   useEffect(() => {
@@ -31,11 +30,10 @@ export default function App() {
   const renderListItem = ({ item, index }) => {
     return (
       <View style={styles.listContainer}>
-        <Image style={styles.img} source={{uri: item.img}} />
-        <Text style={styles.name}>{item.name}</Text>
-        <Text style={styles.type}>{item.category}</Text>
-        <Text style={styles.material}>{item.meterial}</Text>
-        <Text style={styles.alcohol}>{item.alc}</Text>
+        <Text style={styles.name}>{item.fstvlNm}</Text>
+        <Text style={styles.start}>{item.fstvlStartDate}</Text>
+        <Text style={styles.end}>{item.fstvlEndDate}</Text>
+        <Text style={styles.manage} onPress={() => Linking.openURL(item.homepageUrl)}>{item.mnnst}</Text>
       </View>
     );
   }
@@ -47,7 +45,7 @@ export default function App() {
         <Text style={styles.headerText}>{ loading }</Text>
       </View>
       <FlatList 
-        data={sulList}
+        data={fsvlList}
         renderItem={renderListItem}>
       </FlatList>
     </View>
@@ -76,10 +74,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center'
   },
-  item: {
-    alignItems: 'center',
-    justifyContent: 'center'
-  },
   listContainer: {
     width: deviceWidth-20,
     borderRadius: 10,
@@ -90,28 +84,26 @@ const styles = StyleSheet.create({
     color: "grey",
     backgroundColor: "white",
   },
-  img: {
-    flex:1,
-    aspectRatio: 1.5, 
-    resizeMode: 'contain',
-    marginBottom: 10
-  },
   name: {
     color: "black",
     fontSize: 15,
     fontWeight: "bold",
     marginBottom: 5,
   },
-  type: {
+  start: {
     color: "black",
     fontSize: 15
   },
-  material: {
+  end: {
     color: "black",
     fontSize: 15
   },
-  alcohol: {
+  url: {
     color: "black",
     fontSize: 15
   },
+  manage: {
+    color: "black",
+    fontSize: 15
+  }
 });
