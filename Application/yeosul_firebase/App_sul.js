@@ -6,7 +6,7 @@ import firebase  from './firebase';
 const deviceWidth = Dimensions.get('window').width;
 
 export default function App() {
-  const [loading, setLoading] = useState("Loading...");
+  const [loading, setLoading] = useState("");
   const [sulList, setSulList] = useState({});
   const sulCollection = firebase.collection("sool_test");
   const getFsvDocs = async () => {
@@ -46,10 +46,16 @@ export default function App() {
       <View style={styles.header}>
         <Text style={styles.headerText}>{ loading }</Text>
       </View>
-      <FlatList 
-        data={sulList}
-        renderItem={renderListItem}>
-      </FlatList>
+        {loading === "" ? (
+          <View style={styles.loading}>
+            <ActivityIndicator color="grey" style={{marginTop: 10}} size="large" />
+          </View>
+          ) : (
+          <FlatList 
+            data={sulList}
+            renderItem={renderListItem}>
+          </FlatList>
+        )}
     </View>
   );
 }

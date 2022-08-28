@@ -6,7 +6,7 @@ import firebase  from './firebase';
 const deviceWidth = Dimensions.get('window').width;
 
 export default function App() {
-  const [loading, setLoading] = useState("Loading...");
+  const [loading, setLoading] = useState("");
   const [fsvlList, setFsvlList] = useState({});
   const fsvlCollection = firebase.collection("festival_test");
   const getFsvDocs = async () => {
@@ -44,10 +44,16 @@ export default function App() {
       <View style={styles.header}>
         <Text style={styles.headerText}>{ loading }</Text>
       </View>
-      <FlatList 
-        data={fsvlList}
-        renderItem={renderListItem}>
-      </FlatList>
+      {loading === "" ? (
+          <View style={styles.loading}>
+            <ActivityIndicator color="grey" style={{marginTop: 10}} size="large" />
+          </View>
+          ) : (
+          <FlatList 
+            data={fsvlList}
+            renderItem={renderListItem}>
+          </FlatList>
+        )}
     </View>
   );
 }
