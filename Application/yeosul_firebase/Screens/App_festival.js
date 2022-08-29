@@ -3,9 +3,7 @@ import { StyleSheet, Text, View, FlatList, ActivityIndicator, Dimensions, Linkin
 import React, { useState, useEffect } from "react";
 import firebase  from './firebase';
 
-const deviceWidth = Dimensions.get('window').width;
-
-export default function App() {
+export default function Fstvl() {
   const [loading, setLoading] = useState("");
   const [fsvlList, setFsvlList] = useState({});
   const fsvlCollection = firebase.collection("festival_test");
@@ -81,7 +79,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   listContainer: {
-    width: deviceWidth-20,
+    width: Dimensions.get('window').width-20,
     borderRadius: 10,
     borderColor: "grey",
     borderWidth: 1,

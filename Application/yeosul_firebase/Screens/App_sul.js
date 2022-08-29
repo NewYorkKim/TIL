@@ -1,12 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, FlatList, ActivityIndicator, Dimensions, Image } from 'react-native';
+import { StyleSheet, Text, View, FlatList, TouchableOpacity, ActivityIndicator, Dimensions, Image } from 'react-native';
 import React, { useState, useEffect } from "react";
-import firebase  from './firebase';
+import firebase  from '../firebase';
 
-const deviceWidth = Dimensions.get('window').width;
-
-export default function App() {
-  const [loading, setLoading] = useState("");
+export default function Dict({navigation}) {
+  const [loading, setLoading] = useState(false);
   const [sulList, setSulList] = useState({});
   const sulCollection = firebase.collection("sool_test");
   const getFsvDocs = async () => {
@@ -20,9 +18,9 @@ export default function App() {
       data.push(temp);
     }
     setSulList(data);
-    setLoading("전통주 사전");
-    console.log(dataSnapShot);
-  }
+    setLoading(true);
+    // console.log(dataSnapShot);
+  };
 
   useEffect(() => {
     getFsvDocs();
@@ -30,23 +28,22 @@ export default function App() {
 
   const renderListItem = ({ item, index }) => {
     return (
-      <View style={styles.listContainer}>
+      <TouchableOpacity 
+        style={styles.listContainer} 
+        onPress = {() => navigation.push('상세 설명', {'id': index, 'item': item})}>
         <Image style={styles.img} source={{uri: item.img}} />
         <Text style={styles.name}>{item.name}</Text>
-        <Text style={styles.type}>{item.category}</Text>
-        <Text style={styles.material}>{item.meterial}</Text>
-        <Text style={styles.alcohol}>{item.alc}</Text>
-      </View>
+        <Text style={styles.type}>분류: {item.category}</Text>
+        <Text style={styles.material}>주재료: {item.meterial}</Text>
+        <Text style={styles.alcohol}>도수: {item.alc}</Text>
+      </TouchableOpacity>
     );
-  }
+  };
 
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
-      <View style={styles.header}>
-        <Text style={styles.headerText}>{ loading }</Text>
-      </View>
-        {loading === "" ? (
+        {loading === false ? (
           <View style={styles.loading}>
             <ActivityIndicator color="grey" style={{marginTop: 10}} size="large" />
           </View>
@@ -67,27 +64,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  header: {
-    marginTop: 50,
-    marginBottom: 20,
-    alignItems: 'center',
-    justifyContent: 'center'   
-  },
-  headerText: {
-    color: "black",
-    fontSize: 28,
-    fontWeight: "500"
-  },
-  loading: {
-    alignItems: 'center',
-    justifyContent: 'center'
-  },
   item: {
     alignItems: 'center',
     justifyContent: 'center'
   },
   listContainer: {
-    width: deviceWidth-20,
+    width: Dimensions.get('window').width-20,
     borderRadius: 10,
     borderColor: "grey",
     borderWidth: 1,
