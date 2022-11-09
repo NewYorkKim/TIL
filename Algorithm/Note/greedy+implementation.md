@@ -185,3 +185,45 @@ if value != 0:
 
 print(''.join(result))
 ```
+
+
+
+## 실습
+
+##### 그리디 알고리즘
+
+- [백준 2839번](https://www.acmicpc.net/problem/2839) `success`
+
+- [백준 1931번](https://www.acmicpc.net/problem/1931) `success`
+
+- [백준 11047번](https://www.acmicpc.net/problem/11047) `success`
+
+- [백준 2875번](https://www.acmicpc.net/problem/2875) `success`
+
+- [백준 10610번](https://www.acmicpc.net/problem/10610) `success`
+
+- [백준 1783번]()
+
+- [백준 11000번]()
+
+- [백준 11399번](https://www.acmicpc.net/problem/11399) `success`
+
+- [백준 2217번](https://www.acmicpc.net/problem/2217) `success`
+
+- [백준 13458번](https://www.acmicpc.net/problem/13458) `success`
+
+- [백준 1946번]()
+
+- [백준 4796번](https://www.acmicpc.net/problem/4796) `success`
+
+- [백준 1541번]()
+
+- [백준 12845번]()
+
+- [백준 2873번]()
+
+- [백준 1744번]()
+
+- [백준 1700번]()
+
+- [백준 1969번]()
