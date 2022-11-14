@@ -26,16 +26,17 @@ export default function Dict({navigation}) {
     getFsvDocs();
   }, []);
 
-  const renderListItem = ({ item, index }) => {
+  const renderListItem = ({ index, item }) => {
     return (
       <TouchableOpacity 
         style={styles.listContainer} 
         onPress = {() => navigation.push('상세 설명', {'id': index, 'item': item})}>
-        <Image style={styles.img} source={{uri: item.img}} />
+        {/* <Image style={styles.img} source={{uri: item.img}} /> */}
         <Text style={styles.name}>{item.name}</Text>
-        <Text style={styles.type}>분류: {item.category}</Text>
-        <Text style={styles.material}>주재료: {item.meterial}</Text>
-        <Text style={styles.alcohol}>도수: {item.alc}</Text>
+        <Text style={styles.type}>분류: {item.craft}</Text>
+        <Text style={styles.alcohol}>도수: {item.alcohol}</Text>
+        <Text style={styles.material}>주재료: {item.meterials}</Text>
+        <Text style={styles.alcohol}>용량: {item.capacity}</Text>
       </TouchableOpacity>
     );
   };
