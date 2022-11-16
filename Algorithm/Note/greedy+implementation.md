@@ -19,7 +19,7 @@
 
 
 
-##### Python 구현 예제
+### Python 구현 예제
 
 ```python
 n = 1260
@@ -114,7 +114,7 @@ print(result)
 
 
 
-##### Python 구현 예제
+### Python 구현 예제
 
 ```python
 n = int(input())
@@ -190,7 +190,7 @@ print(''.join(result))
 
 ## 실습
 
-##### 그리디 알고리즘
+### 그리디 알고리즘
 
 - [백준 2839번](https://www.acmicpc.net/problem/2839) `success`
 

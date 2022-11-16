@@ -36,7 +36,7 @@
 
 
 
-##### Python 구현 예제
+### Python 구현 예제
 
 ```python
 from itertools import permutations
@@ -83,7 +83,7 @@ print(result)
 
 
 
-##### Python 구현 예제
+### Python 구현 예제
 
 ```python
 from collections import Counter
@@ -103,7 +103,7 @@ print(dict(counter))
 
 
 
-##### Python 구현 예제
+### Python 구현 예제
 
 ```python
 import math

@@ -18,7 +18,7 @@
 
 
 
-##### Python 구현 예제
+### Python 구현 예제
 
 ```python
 def dfs(graph, v, visited):
@@ -86,7 +86,7 @@ print(result)
 
 
 
-##### Python 구현 예제
+### Python 구현 예제
 
 ```python
 from collections import deque

@@ -23,7 +23,7 @@
 
 
 
-##### 선택 정렬과 기본 정렬 라이브러리 수행 시간 비교
+### 선택 정렬과 기본 정렬 라이브러리 수행 시간 비교
 
 ```python
 from random import randint
@@ -61,7 +61,7 @@ print("기본 정렬 라이브러리 성능 측정:", end_time - start_time)
 
 ## 실습
 
-##### 두 배열의 원소 교체
+### 두 배열의 원소 교체
 
 ```python
 n, k = map(int, input().split())

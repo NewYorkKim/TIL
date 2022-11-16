@@ -23,7 +23,7 @@
 
 ![img](https://velog.velcdn.com/images%2Fdongchyeon%2Fpost%2F4bbd7459-04bb-4c39-b9e9-2bbf03d3b271%2F%EC%84%A0%ED%83%9D%EC%A0%95%EB%A0%AC%20%EC%84%A4%EB%AA%851.png)
 
-##### Python 구현 예제
+### Python 구현 예제
 
 ```python
 array = [7, 5, 9, 0, 3, 1, 6, 2, 4, 8]
@@ -40,7 +40,7 @@ print(array)
 
 
 
-##### 시간 복잡도
+### 시간 복잡도
 
 - 선택 정렬은 N번 만큼 가장 작은 수를 찾아서 맨 앞으로 보내야 함
 - 구현 방식에 따라 사소한 오차는 있을 수 있지만, 전체 연산 횟수는 다음과 같음
@@ -58,7 +58,7 @@ print(array)
 
 ![img](https://velog.velcdn.com/images%2Fdongchyeon%2Fpost%2F8a635e87-199f-4bd9-8e64-47b04908120d%2F%EC%82%BD%EC%9E%85%20%EC%A0%95%EB%A0%AC%20%EC%84%A4%EB%AA%851.png)
 
-##### Python 구현 예제
+### Python 구현 예제
 
 ```python
 array = [7, 5, 9, 0, 3, 1, 6, 2, 4, 8]
@@ -75,7 +75,7 @@ print(array)
 
 
 
-##### 시간 복잡도
+### 시간 복잡도
 
 - 삽입 정렬의 시간 복잡도는 **O(N²)**이며, 선택 정렬과 마찬가지로 반복문이 두 번 중첩되어 사용
 - 현재 리스트의 데이터가 거의 정렬되어 있는 상태라면 매우 빠르게 동작

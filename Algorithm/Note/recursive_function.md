@@ -30,7 +30,7 @@
 
 
 
-##### Python 구현 예제
+### Python 구현 예제
 
 ```python
 def factorial_iterative(n):

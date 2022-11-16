@@ -19,7 +19,7 @@
 
 
 
-##### Python 구현 예제
+### Python 구현 예제
 
 ```python
 stack = []
@@ -51,7 +51,7 @@ print(stack)  # 최하단 원소부터 출력
 
 
 
-##### Python 구현 예제
+### Python 구현 예제
 
 ```python
 from collections import deque
@@ -79,7 +79,7 @@ print(queue)  # 나중에 들어온 원소부터
 
 ## 실습
 
-##### 스택 자료구조
+### 스택 자료구조
 
 - [백준 10828번](https://www.acmicpc.net/problem/10828) `success`
 
@@ -95,7 +95,7 @@ print(queue)  # 나중에 들어온 원소부터
 
 
 
-##### 큐 자료구조
+### 큐 자료구조
 
 - [백준 18258번](https://www.acmicpc.net/problem/18258) `success`
 
