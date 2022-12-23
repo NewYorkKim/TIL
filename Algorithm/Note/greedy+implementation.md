@@ -202,9 +202,9 @@ print(''.join(result))
 
 - [백준 10610번](https://www.acmicpc.net/problem/10610) `success`
 
-- [백준 1783번]()
+- [백준 1783번](https://www.acmicpc.net/problem/1783)
 
-- [백준 11000번]()
+- [백준 11000번](https://www.acmicpc.net/problem/11000)
 
 - [백준 11399번](https://www.acmicpc.net/problem/11399) `success`
 
@@ -212,18 +212,18 @@ print(''.join(result))
 
 - [백준 13458번](https://www.acmicpc.net/problem/13458) `success`
 
-- [백준 1946번]()
+- [백준 1946번](https://www.acmicpc.net/problem/1946) `success`
 
 - [백준 4796번](https://www.acmicpc.net/problem/4796) `success`
 
-- [백준 1541번]()
+- [백준 1541번](https://www.acmicpc.net/problem/1541) `success`
 
-- [백준 12845번]()
+- [백준 12845번](https://www.acmicpc.net/problem/12845)
 
-- [백준 2873번]()
+- [백준 2873번](https://www.acmicpc.net/problem/2873)
 
-- [백준 1744번]()
+- [백준 1744번](https://www.acmicpc.net/problem/1744)
 
-- [백준 1700번]()
+- [백준 1700번](https://www.acmicpc.net/problem/1700)
 
-- [백준 1969번]()
+- [백준 1969번](https://www.acmicpc.net/problem/1969)

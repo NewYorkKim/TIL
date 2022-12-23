@@ -105,9 +105,9 @@ post_order(tree['A'])
 ## 실습
 
 - [백준 11725번](https://www.acmicpc.net/problem/11725)
-- [백준 1167번]()
-- [백준 1967번]()
+- [백준 1167번](https://www.acmicpc.net/problem/1167)
+- [백준 1967번](https://www.acmicpc.net/problem/1967)
 - [백준 1991번](https://www.acmicpc.net/problem/1991) `success`
-- [백준 2263번]()
-- [백준 5639번]()
-- [백준 4803번]()
+- [백준 2263번](https://www.acmicpc.net/problem/2263)
+- [백준 5639번](https://www.acmicpc.net/problem/5639)
+- [백준 4803번](https://www.acmicpc.net/problem/4803)
