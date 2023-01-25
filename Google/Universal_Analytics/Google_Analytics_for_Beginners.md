@@ -63,3 +63,44 @@
 - Site Usage: Behavior metrics like users, pages per session, and average session duration
 - Goal: Metrics based on the number of goals you've configured
 - Ecommerce: Transaction metrics
+
+## Basic Reports
+
+### Audience reports
+- Help you better understand the characteristics of your users
+    - Demographics
+    - Interests
+    - Geo
+    - Behavior
+    - Techonology
+    - Mobile
+- Active Users: Show how many users had at least one session on your site in the last day/7 days/14 days/30 days
+
+### Acquisition reports
+- Compare the performance of different marketing channels
+- Discover which sources send you the highest quality traffic and conversions
+- Mediums
+    - Organic: Through unpaid search like Google Search result
+    - CPC: Through a paid search campaign like Google Ads text ads
+    - Referrals: After the user clicked on a website other 
+    - Email
+    - None: Directly to your site by typing your URL
+- Source: More information about mediums
+
+### Behavior reports
+- How Google Analytics calculates behavior data
+    - Site Content
+    - Site Speed
+    - Site Search
+    - Events
+    - Publishers
+
+## Basic Campaign and Conversion Tracking
+
+### How to measure Custom Campaigns
+- Campaign Tags: Extra bits of information that you add to the URL links of your online marketing or advertising materials
+    - Medium
+    - Source
+    - Campaign: Name
+    - Content: Version
+    - Term: Keyword
