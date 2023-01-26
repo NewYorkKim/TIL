@@ -1,6 +1,6 @@
 # Google Analytics for Beginners
 
-> 2023/01/22 ~ ing
+> 2023/01/22 ~ 2023/01/26
 
 - source: [Analytics Academy](https://analytics.google.com/analytics/academy/)
 
@@ -104,3 +104,20 @@
     - Campaign: Name
     - Content: Version
     - Term: Keyword
+
+### Use Goals to measure business objectives
+
+- Business Goals: Actions you want your users to take on your website
+    - Conversion
+- Google Analytics Goals: A feture to track conversions
+    - Conversion Rate
+    - Goal Funnel
+
+### How to measure Google Ads campaigns
+- Link Google Analytics with Google Ads
+    - View Google Ads click & cost data in Google Analytics
+    - Create remarketing lists to use in Google Ads campigns
+    - Import Analytics goals & transaction into Googe Ads
+    - View Analytics site engagement data in Google Ads
+- Auto Tagging
+- Bid Adjustments
