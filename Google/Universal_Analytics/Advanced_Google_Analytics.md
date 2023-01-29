@@ -22,6 +22,7 @@
 
 
 ### Categorizing into users and sessions
+
 - New vs. Returning Users
     - Cookie ➡ ID
 - Sessions
@@ -31,6 +32,7 @@
     - Account Linking
 
 ### Applying configuration settings
+
 - Data Filters
 - Goals
     - Destination/Pageviews: When user lands on page of website
@@ -47,6 +49,7 @@
 - *Once data has been processed you can't apply configuration settings*
 
 ### Storing data and generating reports
+
 - Dimensions and Metrics
     - Hit level
     - Session level
@@ -54,9 +57,69 @@
 - Aggregate tables: Are used to quickly display the standard reports in Analytics
 
 ### Creating a measurement plan
+
 - Business Objective
 - Strategy: Support the objective
 - Tactics: Help you achieve your strategies
 - Key Performance Indicators(KPIs): Help you measure your macro- or micro-conversions
     - Macro-conversions: Measure the tactics that support your various strategies
     - Micro-conversions: Metrics that help you better understand the user behavior that leads to macro-conversions
+
+
+## Setting Up Data Collection and Configuration
+
+### Organize your Analytics account
+
+- Organizations
+- Properties
+    - ex) Website, Mobile
+    - Cross-domain tracking = Site linking
+        - Google Tag Manager
+    - Rollup reporting: Can aggregate data automatically from multiple properties into a new combined property
+        - ex) Website + Mobile
+- Views
+    - Raw Data
+    - Test
+    - Master
+- *Limited number of properties and views*
+
+### Set up advanced filters on views
+
+- Filter
+    - Predefined
+    - Custom
+    - Track activity in a specific website directory or track subdomains of your website in seperate views
+    - Normalize the data in your reports to make them easier to use
+    
+
+### Create your own Custom Dimensions
+
+- Javascript code
+- Scope
+    - Hit
+    - Session
+    - User
+    - Product
+- Secondary Dimensions
+
+### Create your own Custom Metrics
+
+- Javascript code
+- Scope
+    - Hit
+    - Product
+- Formatting Type
+    - Integer
+    - Currency (Decimal)
+    - Time
+
+### More useful configuration
+
+- Demographics and Interests reports
+- Internal Site Search
+- Calculated Metrics
+- Channel Groupings
+- Content Grouping
+- Enhanced Ecommerce
+- User ID
+- Data Import
