@@ -1,6 +1,6 @@
 # Advanced Google Analytics
 
-> 2023/01/28 ~ ing
+> 2023/01/28 ~ 2023/01/30
 
 - source: [Analytics Academy](https://analytics.google.com/analytics/academy/)
 
@@ -123,3 +123,60 @@
 - Enhanced Ecommerce
 - User ID
 - Data Import
+
+
+## Advanced Analysis Tools and Techniques
+
+### Segment data for insight
+
+- User segments
+    - Span multiple sessions
+    - Max date range 90 days
+    - ex) age, date, gender
+- Session segments
+    - Span single session
+    - ex) Goal completed, Revenue generated
+- User & Session segments
+    - Dimensions
+    - Metrics
+    - Session Dates
+    - Sequences of user actions
+- Customized segments
+
+### Analyze data by channel
+
+- Last click attribution
+- Multi-Channel Funnels (MCF) : Can tell you what role prior marketing activities played in the conversion process
+ - Assisted conversion
+
+
+## Advanced Marketing Tools
+
+### Introduction to remarketing
+
+- Google Search Remarketing
+    - Must meet criteria
+    - Must have 1000+ users
+    - Demgographics dimensions not eligible
+
+### Better targeting with Dynamic Remarketing
+
+- Based on
+    - Content or products users previously viewed on your website
+    - Related and top-performing content and products
+    - Purchase histories
+    - Demographics
+- Dynamic Remarketing
+    - Find vertical attributes
+    - Create Custom Dimenisons
+    - Update site tags
+    - Create Dynamic Remarketing audiences
+    - Create Dynamic Remarketing attributes
+    - Create Dynamic Remarketing campaign
+
+### Course Summary
+
+- Collect Data
+- Create Reports
+- Analyze Reports
+- Test Solutions
