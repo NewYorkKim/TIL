@@ -16,15 +16,15 @@ def updown(puzzle):
 
 def square(puzzle):
     for x in range(0, 9, 3):
-        tmp = []
-        for line in puzzle:
-            tmp.extend(line[x:x+3])
-        print(tmp)
-    #     if len(set(tmp)) == 9:
-    #         continue
-    #     else:
-    #         return False
-    # return True
+        for y in range(0, 9, 3):
+            tmp = []
+            for line in puzzle[y:y+3]:
+                tmp += line[x:x+3]
+            if len(set(tmp)) == 9:
+                continue
+            else:
+                return False
+    return True
 
 t = int(input())
 
@@ -32,5 +32,5 @@ for i in range(1, t+1):
     puzzle = [list(map(int, input().split())) for _ in range(9)]
 
     square(puzzle)
-    # result = side(puzzle) and updown(puzzle) and square(puzzle)
-    # print(f"#{i}", +(result))
+    result = side(puzzle) and updown(puzzle) and square(puzzle)
+    print(f"#{i}", +(result))
