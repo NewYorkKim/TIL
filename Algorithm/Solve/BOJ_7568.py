@@ -1,21 +1,14 @@
 n = int(input())
-array1 = []
-dic = dict()
+array = [tuple(map(int, input().split())) for _ in range(n)]
+rank = [1] * n
 
 for i in range(n):
-    x = tuple(map(int, input().split()))
-    array1.append(x)
-    dic[x] = 1
+    for j in range(n):
+        if i == j:
+            continue
+        if (array[i][0] > array[i][0]) and (array[i][1] > array[j][1]):
+            continue
+        elif (array[i][0] < array[j][0]) and (array[i][1] < array[j][1]):
+            rank[i] += 1
 
-array2 = sorted(dic.keys(), reverse=True)
-
-for i in range(len(array2)):
-    for j in range(i+1):
-        if (array2[i][0] < array2[j][0]) and (array2[i][1] < array2[j][1]):
-            dic[array2[i]] += 1
-
-for k in array1:
-    print(dic[k], end=' ')
-
-
-    
+print(*rank)
