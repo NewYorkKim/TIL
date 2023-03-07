@@ -54,6 +54,8 @@
   - [Discover the Next Generation of Google Analytics](https://github.com/NewYorkKim/TIL/blob/master/Firebase/Google_Analytics_4/Discover_the_Next_Generation_of_Google_Analytics.md)
 - Universal Analytics
   - [Google Marketing Platform Academy: Analytics 360](Firebase/Universal_Analytics/Google_Marketing_Platform_Academy_Analytics_360.md)
+  - Google Analytics for Beginners
+  - Advanced Google Analytics
 
 
 
