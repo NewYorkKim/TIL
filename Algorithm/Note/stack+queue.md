@@ -89,7 +89,7 @@ print(queue)  # 나중에 들어온 원소부터
 
 - [백준 4949번](https://www.acmicpc.net/problem/4949) `success`
 
-- [백준 1874번](https://www.acmicpc.net/problem/1874) 
+- [백준 1874번](https://www.acmicpc.net/problem/1874) `success`
 
 - [백준 17298](https://www.acmicpc.net/problem/17298)
 
