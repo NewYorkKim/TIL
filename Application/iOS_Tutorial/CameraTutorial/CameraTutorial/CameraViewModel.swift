@@ -8,21 +8,20 @@
 import SwiftUI
 import AVFoundation
 import Combine
+import PhotosUI
 
 class CameraViewModel: ObservableObject {
     private let model: Camera
     private let session: AVCaptureSession
     private var subscriptions = Set<AnyCancellable>()
-//    let photoCollection = PhotoCollection(smartAlbum: .smartAlbumUserLibrary)
     private var isCamreaBusy = false
     
     let cameraPreview: AnyView
     let hapticImpact = UIImpactFeedbackGenerator()
     
+    var images: [UIImage] = []
     var currentZoomFactor: CGFloat = 1.0
     var lastScale: CGFloat = 1.0
-    
-    @Published var thumnailImage: Image?
     
     @Published var shutterEffect = false
     @Published var recentImage: UIImage?
@@ -31,6 +30,29 @@ class CameraViewModel: ObservableObject {
     
     func configure() {
         model.requestAndCheckPermissions()
+        self.requestAndGetLibraryPreview()
+    }
+    
+    func requestAndGetLibraryPreview() {
+        PHPhotoLibrary.requestAuthorization(for: .readWrite) { status in
+            if status == .authorized {
+                let fetchOptions = PHFetchOptions()
+                fetchOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
+                fetchOptions.fetchLimit = 1
+                
+                let fetchResult = PHAsset.fetchAssets(with: .image, options: fetchOptions)
+                
+                if let asset = fetchResult.firstObject {
+                    let requestOptions = PHImageRequestOptions()
+                    requestOptions.deliveryMode = .fastFormat
+                    requestOptions.isSynchronous = true
+                    
+                    PHImageManager.default().requestImage(for: asset, targetSize: UIScreen.main.bounds.size, contentMode: .aspectFit, options: requestOptions) { image, _ in
+                        self.recentImage = image
+                    }
+                }
+            }
+        }
     }
     
     func switchFlash() {
@@ -83,7 +105,8 @@ class CameraViewModel: ObservableObject {
         model = Camera()
         session = model.session
         cameraPreview = AnyView(CameraPreviewView(session: session))
-        
+                
+        // test
         model.$recentImage.sink { [weak self] (photo) in
             guard let pic = photo else { return }
             self?.recentImage = pic
