@@ -34,13 +34,13 @@ struct CameraView: View {
                 HStack {
                     Button(action: {viewModel.switchFlash()}) {
                         Image(systemName: viewModel.isFlashOn ? "bolt.fill" : "bolt")
-                            .foregroundColor(viewModel.isFlashOn ? .yellow : .white)
+                            .foregroundColor(viewModel.isFlashOn ? Color("joyYellow") : .white)
                     }
                     .padding(.horizontal, 30)
                     
                     Button(action: {viewModel.switchSilent()}) {
                         Image(systemName: viewModel.isSilentModeOn ? "speaker.fill" : "speaker")
-                            .foregroundColor(viewModel.isSilentModeOn ? .yellow : .white)
+                            .foregroundColor(viewModel.isSilentModeOn ? Color("joyYellow") : .white)
                     }
                     .padding(.horizontal, 30)
                 }
@@ -66,6 +66,7 @@ struct CameraView: View {
                                 .frame(width: 75, height: 75)
                         }
                     }
+                    .preferredColorScheme(.dark)
                     .padding()
                     .onChange(of: selectedItem) { newValue in
                         guard let item = selectedItem.first else { return }
