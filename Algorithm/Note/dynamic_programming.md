@@ -41,7 +41,7 @@
 - 일단 재귀 함수로 비효율적인 완전 탐색 프로그램을 작성한 뒤에 (탑다운) 작은 문제에서 구한 답이 큰 문제에서 그대로 사용될 수 있으면, 코드를 개선하는 방법을 사용
 - <U>일반적인 코딩 테스트 수준에서는 기본 유형의 다이나믹 프로그래밍 문제가 출제</U>되는 경우가 많음
 
-### 개미 전사: 다이나믹 프로그래밍 기초 문제 풀이 (Python 코드 예제)
+### Python 코드 예제: 개미 전사
 
 ```python
 n = int(input())
@@ -57,7 +57,7 @@ for i in range(2, n):
 print(d[n-1])
 ```
 
-### 1로 만들기: 다이나믹 프로그래밍 기초 문제 풀이 (Python 코드 예제)
+### Python 코드 예제: 1로 만들기
 
 ```python
 x = int(input())
@@ -76,6 +76,68 @@ for i in range(2, x+1):
 print(d[x])
 ```
 
+### Python 코드 예제: 효율적인 화폐 구성
+
+```python
+n, m = map(int, input().split())
+array = []
+for i in range(n):
+    array.append(int(input()))
+
+d = [10001] * (m + 1)
+
+d[0] = 0
+for i in range(n):
+    for j in range(array[i], m+1):
+        if d[j-array[i]] != 10001:
+            d[j] = min(d[j], d[j-array[i]] + 1)
+
+if d[m] == 10001:
+    print(-1)
+else:
+    print(d[m])
+```
+
+### Python 코드 예제: 금광
+
+```python
+for tc in range(int(input())):
+    n, m = map(int, input().split())
+    array = list(map(int, input().split()))
+    dp = []
+    index = 0
+    for i in range(n):
+        dp.append(array[index: index+m])
+        index += m
+    for j in range(1, m):
+        for i in range(n):
+            if i == 0: left_up = 0
+            else: left_up = dp[i-1][j-1]
+            if i == n - 1: left_down = 0
+            else: left_down = dp[i+1][j-1]
+            left = dp[i][j-1]
+            dp[i][j] = dp[i][j] + max(left_up, left_down, left)
+    result = 0
+    for i in range(n):
+        result = max(result, dp[i][m-1])
+    print(result)
+```
+
+### Python 코드 예제: 병사 배치하기
+
+```python
+n = int(input())
+array = list(map(int, input().split()))
+array.reverse()
+
+dp = [1] * n
+
+for i in range(1, n):
+    for j in range(0, i):
+        if array[j] < array[i]:
+            dp[i] = max(dp[i], dp[j]+1)
+print(n - max(dp))
+```
 
 ## 피보나치 수열
 - 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
