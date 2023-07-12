@@ -8,8 +8,27 @@
 import SwiftUI
 
 struct ChatView: View {
+    @StateObject var messageManager = MessageManager()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            ScrollViewReader { proxy in
+                ScrollView {
+                    ForEach(messageManager.messages, id: \.id) { message in
+                        MessageBubble(message: message)
+                    }
+                }
+                .padding(.top, 8)
+                .onChange(of: messageManager.lastMessageId) { id in
+                    withAnimation {
+                        proxy.scrollTo(id, anchor: .bottom)
+                    }
+                }
+            }
+            
+            MessageField()
+                .environmentObject(messageManager)
+        }
     }
 }
 
