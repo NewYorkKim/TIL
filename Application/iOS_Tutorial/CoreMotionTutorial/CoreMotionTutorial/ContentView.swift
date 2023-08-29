@@ -12,7 +12,7 @@ struct ContentView: View {
     @State private var motionManager = CMMotionManager()
     @State private var pitchingCount = 0
     @State private var maximum = 0.0
-    @State private var AccelerationData = []
+    @State private var vectorData: [Double] = []
     @State private var flag = false
     
     var body: some View {
@@ -47,16 +47,17 @@ struct ContentView: View {
                     print(pitchingCount, attitude.y)
                     
                     if attitude.y > 10 {
-                        AccelerationData.append(attitude.y)
+                        let vector = sqrt(pow(attitude.x, 2) + pow(attitude.y, 2) + pow(attitude.z, 2))
+                        vectorData.append(vector)
                         flag = true
                     } else {
                         if flag == true {
                             pitchingCount += 1
-                            maximum = AccelerationData[AccelerationData.count-1] as! Double
+                            maximum = vectorData[vectorData.count-1]
                             flag = false
                         }
                         
-                        AccelerationData = []
+                        vectorData = []
                     }
                 }
             }
