@@ -15,6 +15,10 @@
 		5B58229A2AAB08180059804F /* BOJ_2941.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5822992AAB08180059804F /* BOJ_2941.swift */; };
 		5B58229C2AAB0DDF0059804F /* BOJ_1316.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58229B2AAB0DDF0059804F /* BOJ_1316.swift */; };
 		5B58229E2AAB0FE40059804F /* BOJ_25206.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58229D2AAB0FE40059804F /* BOJ_25206.swift */; };
+		5B6A3F852AB6D7630040C348 /* BOJ_27323.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A3F842AB6D7630040C348 /* BOJ_27323.swift */; };
+		5B6A3F872AB6D7B10040C348 /* BOJ_1085.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A3F862AB6D7B10040C348 /* BOJ_1085.swift */; };
+		5B6A3F892AB6D8F50040C348 /* BOJ_3009.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A3F882AB6D8F50040C348 /* BOJ_3009.swift */; };
+		5B6A3F8B2AB6DBC80040C348 /* BOJ_15894.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A3F8A2AB6DBC80040C348 /* BOJ_15894.swift */; };
 		5B6E15442AADEBB20037598B /* BOJ_2738.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6E15432AADEBB20037598B /* BOJ_2738.swift */; };
 		5B6E15462AADED400037598B /* BOJ_2566.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6E15452AADED400037598B /* BOJ_2566.swift */; };
 		5B6E15482AADEEBE0037598B /* BOJ_10798.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6E15472AADEEBE0037598B /* BOJ_10798.swift */; };
@@ -91,6 +95,10 @@
 		5B5822992AAB08180059804F /* BOJ_2941.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOJ_2941.swift; sourceTree = "<group>"; };
 		5B58229B2AAB0DDF0059804F /* BOJ_1316.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOJ_1316.swift; sourceTree = "<group>"; };
 		5B58229D2AAB0FE40059804F /* BOJ_25206.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOJ_25206.swift; sourceTree = "<group>"; };
+		5B6A3F842AB6D7630040C348 /* BOJ_27323.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOJ_27323.swift; sourceTree = "<group>"; };
+		5B6A3F862AB6D7B10040C348 /* BOJ_1085.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOJ_1085.swift; sourceTree = "<group>"; };
+		5B6A3F882AB6D8F50040C348 /* BOJ_3009.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOJ_3009.swift; sourceTree = "<group>"; };
+		5B6A3F8A2AB6DBC80040C348 /* BOJ_15894.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOJ_15894.swift; sourceTree = "<group>"; };
 		5B6E15432AADEBB20037598B /* BOJ_2738.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOJ_2738.swift; sourceTree = "<group>"; };
 		5B6E15452AADED400037598B /* BOJ_2566.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOJ_2566.swift; sourceTree = "<group>"; };
 		5B6E15472AADEEBE0037598B /* BOJ_10798.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOJ_10798.swift; sourceTree = "<group>"; };
@@ -195,6 +203,10 @@
 		5B92DD682A9DDD840024F07A /* Solve */ = {
 			isa = PBXGroup;
 			children = (
+				5B6A3F842AB6D7630040C348 /* BOJ_27323.swift */,
+				5B6A3F862AB6D7B10040C348 /* BOJ_1085.swift */,
+				5B6A3F882AB6D8F50040C348 /* BOJ_3009.swift */,
+				5B6A3F8A2AB6DBC80040C348 /* BOJ_15894.swift */,
 				5B92DD712A9DDDAE0024F07A /* BOJ_1000.swift */,
 				5B92DD7F2A9DDDAE0024F07A /* BOJ_1001.swift */,
 				5B92DD792A9DDDAE0024F07A /* BOJ_1008.swift */,
@@ -337,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BD0C38D2AA06C2F00EB759D /* fread.swift in Sources */,
+				5B6A3F8B2AB6DBC80040C348 /* BOJ_15894.swift in Sources */,
 				5B9D8DB12AA764600025BB91 /* BOJ_11718.swift in Sources */,
 				5B7290882AB0668C00E5AE21 /* BOJ_2720.swift in Sources */,
 				5B6E15462AADED400037598B /* BOJ_2566.swift in Sources */,
@@ -346,8 +359,10 @@
 				5B9D8DAF2AA763AB0025BB91 /* BOJ_2908.swift in Sources */,
 				5BD0C3AD2AA22C9600EB759D /* BOJ_10811.swift in Sources */,
 				5B7290982AB2A5F600E5AE21 /* BOJ_9506.swift in Sources */,
+				5B6A3F892AB6D8F50040C348 /* BOJ_3009.swift in Sources */,
 				5B58228E2AA9F4660059804F /* BOJ_25083.swift in Sources */,
 				5B7290842AAEF04C00E5AE21 /* BOJ_2745.swift in Sources */,
+				5B6A3F852AB6D7630040C348 /* BOJ_27323.swift in Sources */,
 				5BD0C3AB2AA22C0800EB759D /* BOJ_3052.swift in Sources */,
 				5B58229A2AAB08180059804F /* BOJ_2941.swift in Sources */,
 				5BD0C3A12AA192A200EB759D /* BOJ_10818.swift in Sources */,
@@ -364,6 +379,7 @@
 				5B5822942AA9F6630059804F /* BOJ_2444.swift in Sources */,
 				5B9D8DAB2AA761C60025BB91 /* BOJ_2675.swift in Sources */,
 				5B72909C2AB2B02100E5AE21 /* BOJ_2581.swift in Sources */,
+				5B6A3F872AB6D7B10040C348 /* BOJ_1085.swift in Sources */,
 				5B92DDA52A9F7A960024F07A /* BOJ_25314.swift in Sources */,
 				5B58229E2AAB0FE40059804F /* BOJ_25206.swift in Sources */,
 				5B5822982AA9FB5D0059804F /* BOJ_1157.swift in Sources */,
