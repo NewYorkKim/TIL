@@ -42,6 +42,7 @@
   <ItemGroup>
      <Compile Include="Assets/MapManager.cs" />
      <Compile Include="Assets/CameraController.cs" />
+     <Compile Include="Assets/ItemManager.cs" />
      <Compile Include="Assets/Animals/Assets/Scripts/PlayerController.cs" />
      <None Include="Assets/Animals/Documentation/ReadMe.txt" />
     <Reference Include="UnityEngine">

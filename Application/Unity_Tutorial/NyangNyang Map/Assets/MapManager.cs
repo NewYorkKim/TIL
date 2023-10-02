@@ -10,12 +10,12 @@ public class MapManager : MonoBehaviour
     // [2][5][6]
     [SerializeField] public GameObject[] landArray;
     [SerializeField] public GameObject player;
+    // 꽃 = 상자 고양이: 상자 고양이(5마리)는 초기에 맵 생성 시 랜덤하게 스폰
+    [SerializeField] public GameObject flower;
     // 타일 하나의 크기 = 2.2f
     [SerializeField] public float UnitSize;
-    // 플레이어의 이동 속도
-    readonly float speed = 50f;
     // 시야; 시야 밖에 타일이 없으면 타일을 갱신
-    readonly float halfSight = 1;
+    public float halfSight = 1;
     // 전체 타일 크기; 순서대로 왼쪽-위 좌표, 오른쪽-아래 좌표를 담고 있음
     Vector3[] border;
 
@@ -28,6 +28,8 @@ public class MapManager : MonoBehaviour
             new Vector3(-UnitSize * 1.5f, 0, UnitSize * 1.5f),
             new Vector3(UnitSize * 1.5f, 0,  -UnitSize * 1.5f),
         };
+
+        SpawnItem();
     }
 
     // Update is called once per frame
@@ -39,6 +41,23 @@ public class MapManager : MonoBehaviour
 
         // 시야 안에 타일이 없는 경우 체크
         BoundaryCheck();
+    }
+
+    void SpawnItem()
+    {
+        for (int i = 0; i < 5; i++)
+        {
+            // 랜덤한 타일 위치 선택
+            int randomTileIndex = Random.Range(0, landArray.Length);
+            // 선택한 타일 내 랜덤한 위치 선택
+            float randomX = Random.Range(landArray[randomTileIndex].transform.position.x - halfSight, landArray[randomTileIndex].transform.position.x + halfSight);
+            float randomZ = Random.Range(landArray[randomTileIndex].transform.position.z - halfSight, landArray[randomTileIndex].transform.position.z + halfSight);
+            Vector3 randomPosition = new Vector3(randomX, 1, randomZ);
+            // 선택한 위치에 꽃 생성
+            GameObject _flower = Instantiate(flower, randomPosition, Quaternion.identity);
+            // 꽃을 자식으로 설정하여 타일과 같이 이동하도록 함
+            _flower.transform.parent = landArray[randomTileIndex].transform;
+        }
     }
 
     void BoundaryCheck()
