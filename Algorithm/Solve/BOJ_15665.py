@@ -2,17 +2,21 @@ import sys
 input = sys.stdin.readline
 
 def back():
-    if len(ans) == m:
-        print(" ".join(map(str, ans)))
+    if len(tmp) == m:
+        ans.add(tuple(tmp))
         return 
 
     for i in range(n):
-        ans.append(nums[i])
+        tmp.append(nums[i])
         back()
-        ans.pop()
+        tmp.pop()
 
 n, m = map(int, input().split())
 nums = sorted(list(map(int, input().split())))
-ans = []
+tmp = []
+ans = set()
 
 back()
+
+for i in sorted(list(ans)):
+    print(" ".join(map(str, i)))

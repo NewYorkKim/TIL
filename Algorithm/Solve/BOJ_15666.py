@@ -1,27 +1,22 @@
 import sys
 input = sys.stdin.readline
 
-def back():
+def back(idx):
     if len(tmp) == m:
         ans.add(tuple(tmp))
         return 
-    
-    for i in range(n):
-        if check[i] is not True:
-            tmp.append(nums[i])
-            check[i] = True
-            back()
-            tmp.pop()
-            check[i] = False
-    
+
+    for i in range(idx, n):
+        tmp.append(nums[i])
+        back(i)
+        tmp.pop()
 
 n, m = map(int, input().split())
 nums = sorted(list(map(int, input().split())))
-check = [False] * (n + 1)
 tmp = []
 ans = set()
 
-back()
+back(0)
 
 for i in sorted(list(ans)):
     print(" ".join(map(str, i)))
